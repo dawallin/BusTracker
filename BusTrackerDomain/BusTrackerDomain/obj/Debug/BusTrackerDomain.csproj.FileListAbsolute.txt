@@ -1,0 +1,5 @@
+C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain\obj\Debug\BusTrackerDomain.csprojResolveAssemblyReference.cache
+C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain\bin\Debug\BusTrackerDomain.dll
+C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain\bin\Debug\BusTrackerDomain.pdb
+C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain\obj\Debug\BusTrackerDomain.dll
+C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain\obj\Debug\BusTrackerDomain.pdb

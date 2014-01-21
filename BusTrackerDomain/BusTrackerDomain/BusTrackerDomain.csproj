@@ -7,8 +7,8 @@
     <ProjectGuid>{BEBD4A84-059F-470A-9784-97799758CC64}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ClassLibrary1</RootNamespace>
-    <AssemblyName>ClassLibrary1</AssemblyName>
+    <RootNamespace>BusTrackerDomain</RootNamespace>
+    <AssemblyName>BusTrackerDomain</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,7 +40,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusTracker.cs" />
+    <Compile Include="Entity\DepartureInfo.cs" />
+    <Compile Include="Interface\IServiceAgent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceAgent.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

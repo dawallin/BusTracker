@@ -1,0 +1,9 @@
+C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\BusTrackerDomain.Test.dll
+C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\BusTrackerDomain.Test.pdb
+C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\obj\Debug\BusTrackerDomain.Test.csprojResolveAssemblyReference.cache
+C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\obj\Debug\BusTrackerDomain.Test.dll
+C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\obj\Debug\BusTrackerDomain.Test.pdb
+C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\BusTrackerDomain.dll
+C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\NSubstitute.dll
+C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\BusTrackerDomain.pdb
+C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\NSubstitute.xml

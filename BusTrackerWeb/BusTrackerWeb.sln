@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusTrackerWeb", "BusTrackerWeb\BusTrackerWeb.csproj", "{1B6B5D24-0E2A-4977-98F1-0FA9F6789E05}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusTrackerDomain.Test", "..\BusTrackerDomain\BusTrackerDomain.Test\BusTrackerDomain.Test.csproj", "{89EC8611-7B16-40CC-9690-5D1802CC3156}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusTrackerDomain", "..\BusTrackerDomain\BusTrackerDomain\BusTrackerDomain.csproj", "{BEBD4A84-059F-470A-9784-97799758CC64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{1B6B5D24-0E2A-4977-98F1-0FA9F6789E05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B6B5D24-0E2A-4977-98F1-0FA9F6789E05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B6B5D24-0E2A-4977-98F1-0FA9F6789E05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89EC8611-7B16-40CC-9690-5D1802CC3156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89EC8611-7B16-40CC-9690-5D1802CC3156}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89EC8611-7B16-40CC-9690-5D1802CC3156}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89EC8611-7B16-40CC-9690-5D1802CC3156}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEBD4A84-059F-470A-9784-97799758CC64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEBD4A84-059F-470A-9784-97799758CC64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEBD4A84-059F-470A-9784-97799758CC64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEBD4A84-059F-470A-9784-97799758CC64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
