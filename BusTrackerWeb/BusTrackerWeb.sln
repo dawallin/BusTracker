@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusTrackerDomain.Test", "..
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusTrackerDomain", "..\BusTrackerDomain\BusTrackerDomain\BusTrackerDomain.csproj", "{BEBD4A84-059F-470A-9784-97799758CC64}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkanetrafikenServiceAgent", "SkanetrafikenServiceAgent\SkanetrafikenServiceAgent.csproj", "{DAF0814F-4EF2-4DE4-9B45-162C0BD2E12F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkanetrafikenServiceAgent.Test", "SkanetrafikenServiceAgent.Test\SkanetrafikenServiceAgent.Test.csproj", "{1FED7C54-1605-4A6A-9DFA-851ED98C64BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,14 @@ Global
 		{BEBD4A84-059F-470A-9784-97799758CC64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEBD4A84-059F-470A-9784-97799758CC64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEBD4A84-059F-470A-9784-97799758CC64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAF0814F-4EF2-4DE4-9B45-162C0BD2E12F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAF0814F-4EF2-4DE4-9B45-162C0BD2E12F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAF0814F-4EF2-4DE4-9B45-162C0BD2E12F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAF0814F-4EF2-4DE4-9B45-162C0BD2E12F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FED7C54-1605-4A6A-9DFA-851ED98C64BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FED7C54-1605-4A6A-9DFA-851ED98C64BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FED7C54-1605-4A6A-9DFA-851ED98C64BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FED7C54-1605-4A6A-9DFA-851ED98C64BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,7 @@
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\bin\Debug\SkanetrafikenServiceAgent.dll
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\bin\Debug\SkanetrafikenServiceAgent.pdb
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\bin\Debug\BusTrackerDomain.dll
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\bin\Debug\BusTrackerDomain.pdb
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\obj\Debug\SkanetrafikenServiceAgent.csprojResolveAssemblyReference.cache
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\obj\Debug\SkanetrafikenServiceAgent.dll
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\obj\Debug\SkanetrafikenServiceAgent.pdb

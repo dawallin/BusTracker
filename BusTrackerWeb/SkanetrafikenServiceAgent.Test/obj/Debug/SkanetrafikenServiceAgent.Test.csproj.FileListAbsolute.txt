@@ -1,0 +1,11 @@
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\SkanetrafikenServiceAgent.Test.dll
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\SkanetrafikenServiceAgent.Test.pdb
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\BusTrackerDomain.dll
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\NSubstitute.dll
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\SkanetrafikenServiceAgent.dll
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\BusTrackerDomain.pdb
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\SkanetrafikenServiceAgent.pdb
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\NSubstitute.xml
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\obj\Debug\SkanetrafikenServiceAgent.Test.csprojResolveAssemblyReference.cache
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\obj\Debug\SkanetrafikenServiceAgent.Test.dll
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\obj\Debug\SkanetrafikenServiceAgent.Test.pdb

@@ -10,7 +10,7 @@ namespace BusTrackerDomain
 {
     public class BusTracker
     {
-        private IServiceAgent serviceAgent;
+        private readonly IServiceAgent serviceAgent;
 
         public BusTracker(IServiceAgent serviceAgent)
         {

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GetDepartureArrivalResponse xmlns="http://www.etis.fskab.se/v1.0/ETISws">
+  <GetDepartureArrivalResult>
+    <Lines>
+      <Line>
+        <No>1</No>
+        <JourneyDateTime>2001-01-01T00:01:00</JourneyDateTime>
+        <LineTypeId>1</LineTypeId>
+        <LineTypeName>LineType</LineTypeName>
+        <Towards>Towards</Towards>
+        <RealTime>
+          <RealTimeInfo>
+            <DepTimeDeviation>1</DepTimeDeviation>
+            <DepDeviationAffect>NON_CRITICAL</DepDeviationAffect>
+          </RealTimeInfo>
+        </RealTime>
+        <Deviations>
+          <Deviation>
+            <PublicNote>Public Note</PublicNote>
+            <Header>HeaderText</Header>
+            <Details>Details</Details>
+            <Summary>Summary</Summary>
+            <ShortText>ShortText</ShortText>
+          </Deviation>
+        </Deviations>
+        <RunNo>1</RunNo>
+      </Line>
+    </Lines>
+  </GetDepartureArrivalResult>
+</GetDepartureArrivalResponse>
+

@@ -15,16 +15,16 @@ namespace BusTrackerDomain.Test
         [TestMethod]
         public void GetStationInfo_ForValidStationId_ReturnsStationTimeTable()
         {
-            int exampleStationId = 1;
-            var exampleDeparture = new DepartureInfo();
+            const int exampleStationId = 1;
+            var exampleStationTimeTable = new List<DepartureInfo> { };
 
             var serviceAgent = Substitute.For<IServiceAgent>();
 
-            serviceAgent.GetStationInfo(exampleStationId).Returns(new List<DepartureInfo> { exampleDeparture });
+            serviceAgent.GetStationInfo(exampleStationId).Returns(exampleStationTimeTable);
 
-            BusTracker busTracker = new BusTracker(serviceAgent);
+            var busTracker = new BusTracker(serviceAgent);
 
-            Assert.AreSame(exampleDeparture, busTracker.GetStationInfo(exampleStationId).FirstOrDefault());
+            Assert.AreSame(exampleStationTimeTable, busTracker.GetStationInfo(exampleStationId));
         }
     }
 }
