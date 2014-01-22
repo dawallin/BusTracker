@@ -17,7 +17,7 @@ namespace SkanetrafikenServiceAgent.Test
     [TestClass]
     public class SkanetrafikenServiceAgentTest
     {
-        public string SerializeObject<T>(T toSerialize)
+        private string SerializeObject<T>(T toSerialize)
         {
             XmlSerializer xmlSerializer = new XmlSerializer(toSerialize.GetType());
 
@@ -28,7 +28,7 @@ namespace SkanetrafikenServiceAgent.Test
             }
         }
 
-        public string CreateGetDepartureArrivalResponse(GetDepartureArrivalResult.Line line)
+        private string CreateGetDepartureArrivalResponse(GetDepartureArrivalResult.Line line)
         {
             return SerializeObject<GetDepartureArrivalResult>(new GetDepartureArrivalResult()
                 {
@@ -40,7 +40,7 @@ namespace SkanetrafikenServiceAgent.Test
         }
 
         [TestMethod]
-        public void GetStationInfo_GivenAServiceIdInProxyAnswer_ServiceIdIsParsed()
+        public void ParseProxyResult_GivenAServiceIdInProxyAnswer_ServiceIdIsParsed()
         {
             const int exampleStation = 0;
             const int exampleNo = 1;
@@ -60,7 +60,7 @@ namespace SkanetrafikenServiceAgent.Test
         }
 
         [TestMethod]
-        public void GetStationInfo_GivenAJourneyTimeWithoutDeviationInProxyAnswer_JourneyTimeIsParsed()
+        public void ParseProxyResult_GivenAJourneyTimeWithoutDeviationInProxyAnswer_JourneyTimeIsParsed()
         {
             const int exampleStation = 0;
             DateTime exampleDateTime = DateTime.Parse("2001-01-01");
@@ -80,7 +80,7 @@ namespace SkanetrafikenServiceAgent.Test
         }
 
         [TestMethod]
-        public void GetStationInfo_GivenADeviationInProxyAnswer_Deviation()
+        public void ParseProxyResult_GivenADeviationInProxyAnswer_DeviationIsParsed()
         {
             const int exampleStation = 0;
             const int exampleDeviation = 1;
