@@ -4,16 +4,16 @@ namespace BusTrackerDomain.Entity
 {
     public class DepartureInfo
     {
-        public int ServiceId;
-        public int StationId;
-        public string StationName;
+        public Service Service { get; set; }
 
-        public int RouteId;
-        public int Direction;
+        public Station Station { get; set; }
 
-        public DateTime DepartureTime;
-        public TimeSpan Delay;
+        public int RouteId { get; set; }
+        public int Direction { get; set; }
 
-        public string Note;
+        public DateTime DepartureTime { get; set; }
+        public TimeSpan Delay { get; set; }
+
+        public string Note { get; set; }
     }
 }

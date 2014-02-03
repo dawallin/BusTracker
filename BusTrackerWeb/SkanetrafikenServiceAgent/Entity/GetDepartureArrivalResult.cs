@@ -13,20 +13,22 @@ namespace BusTrackerWeb.SkanetrafikenServiceAgent.Entity
     public class GetDepartureArrivalResult : IProxyQueryResult
     {
         [XmlArray("Lines")]
-        public List<Line> Lines;
+        public List<Line> Lines { get; set; }
+
+        public StopAreaDataObject StopAreaData { get; set; }
 
         public class Line
         {
-            public string Name;
-            public int No;
+            public string Name { get; set; }
+            public int No { get; set; }
 
-            public DateTime JourneyDateTime;
+            public DateTime JourneyDateTime { get; set; }
             public TimeSpan TimeToDeparture
             {
                 get { return JourneyDateTime - DateTime.Now; }
             }
 
-            public RealTime RealTime;
+            public RealTime RealTime { get; set; }
 
             private string deviations;
 
@@ -57,32 +59,39 @@ namespace BusTrackerWeb.SkanetrafikenServiceAgent.Entity
                 }
             }
 
-            public int RunNo;
+            public int RunNo { get; set; }
         }
 
         public class RealTime
         {
-            public RealTimeInfo RealTimeInfo;
+            public RealTimeInfo RealTimeInfo { get; set; }
         }
 
         public class RealTimeInfo
         {
-            public int DepTimeDeviation;
+            public int DepTimeDeviation { get; set; }
 
-            public string DepDeviationAffect;
+            public string DepDeviationAffect { get; set; }
+        }
+
+        public class StopAreaDataObject
+        {
+            public string Name { get; set; }
         }
 
         public List<DepartureInfo> ToDepartureInfo(int station)
         {
+            string stationName = this.StopAreaData.Name;
+
             return this.Lines.Select(line => new DepartureInfo()
             {
                 Delay = TimeSpan.FromMinutes(line.RealTime != null && line.RealTime.RealTimeInfo != null ? line.RealTime.RealTimeInfo.DepTimeDeviation : 0),
                 DepartureTime = line.JourneyDateTime,
                 Direction = line.RunNo % 2,
-                Note = (line.RealTime != null && line.RealTime.RealTimeInfo != null && line.RealTime.RealTimeInfo.DepDeviationAffect != null ? line.RealTime.RealTimeInfo.DepDeviationAffect : "") + ", " + line.Deviations,
+                Note = (line.RealTime != null && line.RealTime.RealTimeInfo != null && line.RealTime.RealTimeInfo.DepDeviationAffect != null ? line.RealTime.RealTimeInfo.DepDeviationAffect : string.Empty) + ", " + line.Deviations,
                 RouteId = line.RunNo,
-                ServiceId = line.No,
-                StationId = station
+                Service = new Service { ServiceId = line.No, ServiceName = line.Name },
+                Station = new Station { Id = station, Name = stationName }
             }).ToList();
         }
     }

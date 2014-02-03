@@ -31,6 +31,16 @@ namespace BusTrackerWeb.SkanetrafikenServiceAgent
 
             return result.ToDepartureInfo(station);
         }
+        
+        public GetJourneyResult GetJourneyResponse(int from, int to, DateTime time)
+        {
+            string urlString = "http://www.labs.skanetrafiken.se/v2.2/resultspage.asp?selPointFr=|" + from +
+                               "|0&selPointTo=|" + to + "|0" + "&cmdaction=next&LastStart=" + time.ToString("YYYY-MM-DD%20HH:mm");
+
+            var result = ApiQuery<GetJourneyResult>(urlString);
+
+            return result;
+        }
 
         private T ApiQuery<T>(string urlString) where T : IProxyQueryResult
         {
@@ -49,12 +59,29 @@ namespace BusTrackerWeb.SkanetrafikenServiceAgent
 
         private static T FromXmlString<T>(string xmlString) where T : IProxyQueryResult
         {
-            var reader = new StringReader(xmlString);
-            var serializer = new XmlSerializer(typeof(T));
-            var a = serializer.Deserialize(reader);
-            var instance = (T)a;
+            using (var reader = new StringReader(xmlString))
+            {
+                var serializer = new XmlSerializer(typeof (T));
+                var a = serializer.Deserialize(reader);
+                var instance = (T) a;
 
-            return instance;
+                return instance;
+            }
+        }
+
+        public ServiceRoute GetServiceRoute(int serviceId)
+        {
+            string serviceRouteKey = new ServiceFinder().GetRouteKey(serviceId);
+            var serviceRoute = new GetLineResult().ToServiceRoute(serviceRouteKey);
+
+            serviceRoute.Service = new ServiceFinder().GetRouteService(serviceId);
+
+            return serviceRoute;
+        }
+
+        public List<Service> GetServices()
+        {
+            return new ServiceFinder().GetServices();
         }
     }
 }

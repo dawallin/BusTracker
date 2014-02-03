@@ -1,0 +1,423 @@
+C:\Program Files\SonarQubeRunner\Version 2.3
+SonarQube Runner 2.3
+Java 1.7.0_10 Oracle Corporation (64-bit)
+Windows Server 2012 6.2 amd64
+INFO: Runner configuration file: C:\Program Files\SonarQubeRunner\Version 2.3\conf\sonar-runner.properties
+INFO: Project configuration file: C:\Git\Bus Tracker\BusTrackerWeb\sonar-project.properties
+INFO: Default locale: "en_GB", source code encoding: "UTF-8"
+INFO: Work directory: C:\Git\Bus Tracker\BusTrackerWeb\.sonar
+INFO: SonarQube Server 4.1
+01:48:29.741 INFO  - Load batch settings
+01:48:30.137 INFO  - User cache: C:\Users\Administrator\.sonar\cache
+01:48:30.173 INFO  - Install plugins
+01:48:32.167 INFO  - Install JDBC driver
+01:48:32.227 INFO  - Create JDBC datasource for jdbc:mysql://localhost:3306/sonar?useUnicode=true&amp;characterEncoding=utf8
+01:48:35.053 INFO  - Initializing Hibernate
+01:48:41.612 INFO  - Load project settings
+01:48:41.689 WARN  - /!\ The following silverlight SDK directory does not exist, please check your plugin configuration: C:\Program Files\Reference Assemblies\Microsoft\Framework\Silverlight\v4.0
+01:48:41.690 INFO  - The following 'sln' file has been found and will be used: C:\Git\Bus Tracker\BusTrackerWeb\BusTrackerWeb.sln
+01:48:42.016 INFO  - The project 'BusTrackerDomain.Test' has been qualified as a test project.
+01:48:42.159 INFO  - The project 'SkanetrafikenServiceAgent.Test' has been qualified as a test project.
+01:48:42.164 INFO  - Apply project exclusions
+01:48:42.826 INFO  - -------------  Scan BusTrackerWeb
+01:48:42.856 INFO  - Load module settings
+01:48:44.207 INFO  - Quality profile : [name=Sonar way,language=cs]
+01:48:44.365 INFO  - Excluded tests: 
+01:48:44.366 INFO  -   **/package-info.java
+01:48:44.500 INFO  - Index files
+01:48:44.641 INFO  - 6 files indexed
+01:48:44.714 INFO  - Loading technical debt model...
+01:48:45.554 INFO  - Loading technical debt model done: 840 ms
+01:48:45.764 INFO  - Configure Maven plugins
+01:48:46.266 INFO  - Compare to previous analysis (2014-01-28)
+01:48:46.290 INFO  - Compare over 30 days (2013-12-31, analysis of 2014-01-28 01:41:49.0)
+01:48:46.691 INFO  - Initializer CSharpProjectInitializer...
+01:48:46.714 INFO  - Initializer CSharpProjectInitializer done: 23 ms
+01:48:46.714 INFO  - Index files
+01:48:46.729 INFO  - 6 files indexed
+01:48:46.729 INFO  - Base dir: C:\Git\Bus Tracker\BusTrackerWeb\BusTrackerWeb
+01:48:46.729 INFO  - Working dir: C:\Git\Bus Tracker\BusTrackerWeb\BusTrackerWeb\.sonar
+01:48:46.729 INFO  - Source dirs: C:\Git\Bus Tracker\BusTrackerWeb\BusTrackerWeb
+01:48:46.729 INFO  - Source encoding: UTF-8, default locale: en_GB
+01:48:46.757 WARN  - /!\ SKIP StyleCop analysis: no rule defined for StyleCop in the "Sonar way" profile.
+01:48:46.757 INFO  - FxCop plugin won't execute as it is set to 'skip' mode.
+01:48:46.769 INFO  - Sensor org.sonar.plugins.csharp.core.CSharpSourceImporter@65a35c68...
+01:48:47.810 INFO  - Sensor org.sonar.plugins.csharp.core.CSharpSourceImporter@65a35c68 done: 1041 ms
+01:48:47.811 INFO  - Sensor org.sonar.plugins.csharp.squid.CSharpSquidSensor@4807e3f9...
+01:48:49.160 INFO  - Sensor org.sonar.plugins.csharp.squid.CSharpSquidSensor@4807e3f9 done: 1349 ms
+01:48:49.160 INFO  - Sensor org.sonar.plugins.csharp.gendarme.GendarmeSensor$CSharpRegularGendarmeSensor@65aec411...
+01:48:49.208 INFO  - Gendarme executable not found: 'C:\Program Files\gendarme-2.10-bin\gendarme.exe'. The embedded version (2.10) will be used instead.
+01:48:49.208 INFO  - Extracting Gendarme binaries in C:\Git\Bus Tracker\BusTrackerWeb\.sonar
+01:48:49.468 INFO  - Executing command: C:\Git\Bus Tracker\BusTrackerWeb\.sonar\gendarme-2.10-bin\gendarme.exe --config C:\Git\Bus Tracker\BusTrackerWeb\BusTrackerWeb\.sonar\sonar.Gendarme --xml C:\Git\Bus Tracker\BusTrackerWeb\BusTrackerWeb\.sonar\gendarme-report.xml --quiet --confidence normal+ --severity all C:\Git\Bus Tracker\BusTrackerWeb\BusTrackerWeb\bin\BusTrackerWeb.dll
+01:49:01.820 INFO  - Sensor org.sonar.plugins.csharp.gendarme.GendarmeSensor$CSharpRegularGendarmeSensor@65aec411 done: 12660 ms
+01:49:01.820 INFO  - Sensor org.sonar.plugins.csharp.ndeps.sensor.NDepsSensor@34ca6c3e...
+01:49:01.821 INFO  - NDeps executable not found: 'C:\Git\Bus Tracker\BusTrackerWeb\DependencyParser.exe'. The embedded version (1.2) will be used instead.
+01:49:01.821 INFO  - Extracting NDeps binaries in C:\Git\Bus Tracker\BusTrackerWeb\.sonar
+01:49:01.979 INFO  - Executing command: C:\Git\Bus Tracker\BusTrackerWeb\.sonar\NDeps-1.2\DependencyParser.exe -a C:\Git\Bus Tracker\BusTrackerWeb\BusTrackerWeb\bin\BusTrackerWeb.dll -o C:\Git\Bus Tracker\BusTrackerWeb\BusTrackerWeb\.sonar\ndeps-report.xml -d yes
+01:49:02.709 INFO  - Parsing BusTrackerWeb.dll
+01:49:03.293 INFO  - Skip mscorlib... maybe in the GAC?
+01:49:03.293 INFO  - Skip System.Web... maybe in the GAC?
+01:49:03.299 INFO  - Parsing System.Web.Optimization.dll
+01:49:03.300 INFO  - Parsing System.Web.Mvc.dll
+01:49:03.316 INFO  - Parsing System.Web.Http.dll
+01:49:03.317 INFO  - Parsing System.Web.Http.WebHost.dll
+01:49:03.317 INFO  - Skip System.Core... maybe in the GAC?
+01:49:03.317 INFO  - Skip System... maybe in the GAC?
+01:49:03.390 INFO  - Parsing WebGrease.dll
+01:49:03.525 INFO  - Parsing Microsoft.Web.Infrastructure.dll
+01:49:03.525 INFO  - Skip System.ComponentModel.DataAnnotations... maybe in the GAC?
+01:49:03.666 INFO  - Parsing System.Web.Razor.dll
+01:49:03.698 INFO  - Parsing System.Web.WebPages.Razor.dll
+01:49:03.712 INFO  - Parsing System.Web.WebPages.dll
+01:49:03.712 INFO  - Skip System.Runtime.Caching... maybe in the GAC?
+01:49:03.712 INFO  - Skip System.Web.Extensions... maybe in the GAC?
+01:49:03.712 INFO  - Skip System.Configuration... maybe in the GAC?
+01:49:03.712 INFO  - Skip System.Xml... maybe in the GAC?
+01:49:03.712 INFO  - Skip System.Data.Linq... maybe in the GAC?
+01:49:03.712 INFO  - Skip System.Data.Entity... maybe in the GAC?
+01:49:03.712 INFO  - Skip System.Net.Http... maybe in the GAC?
+01:49:03.732 INFO  - Parsing System.Net.Http.Formatting.dll
+01:49:03.739 INFO  - Parsing Newtonsoft.Json.dll
+01:49:03.739 INFO  - Skip System.Runtime.Serialization... maybe in the GAC?
+01:49:03.739 INFO  - Skip System.Xml.Linq... maybe in the GAC?
+01:49:03.739 INFO  - Skip System.Windows.Forms... maybe in the GAC?
+01:49:03.741 INFO  - Parsing Antlr3.Runtime.dll
+01:49:03.741 INFO  - Skip System.Drawing... maybe in the GAC?
+01:49:03.741 INFO  - Skip Microsoft.CSharp... maybe in the GAC?
+01:49:03.751 INFO  - Parsing System.Web.WebPages.Deployment.dll
+01:49:03.751 INFO  - Skip System.Data... maybe in the GAC?
+01:49:05.993 INFO  - Sensor org.sonar.plugins.csharp.ndeps.sensor.NDepsSensor@34ca6c3e done: 4173 ms
+01:49:05.993 INFO  - Sensor org.sonar.plugins.csharp.gallio.GallioSensor@55887585...
+01:49:05.999 INFO  - Executing command: C:\Users\Administrator\AppData\Local\Apps\OpenCover\OpenCover.Console.exe -register:user -target:C:\Program Files\Gallio\bin\Gallio.Echo.exe -targetdir:C:\Git\Bus Tracker\BusTrackerWeb\.sonar "-targetargs:\"/r:Local\" \"/report-directory:C:\Git\Bus Tracker\BusTrackerWeb\.sonar\" \"/report-name-format:gallio-report\" \"/report-type:Xml\" \"C:\Git\Bus Tracker\BusTrackerWeb\..\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\BusTrackerDomain.Test.dll\" \"C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\SkanetrafikenServiceAgent.Test.dll\"" "-filter:+[BusTrackerWeb]* +[BusTrackerDomain]* +[SkanetrafikenServiceAgent]* " -mergebyhash -output:C:\Git\Bus Tracker\BusTrackerWeb\.sonar\coverage-report.xml
+01:49:11.094 INFO  - Executing: C:\Program Files\Gallio\bin\Gallio.Echo.exe
+01:49:12.400 INFO  - 
+01:49:12.446 INFO  - Gallio Echo - Version 3.4 build 11
+01:49:12.448 INFO  - Get the latest version at http://www.gallio.org/
+01:49:12.448 INFO  - 
+01:49:12.698 INFO  - Start time: 01:49
+01:49:12.711 INFO  - Initializing the runtime and loading plugins.
+01:49:14.685 INFO  - Verifying test files.
+01:49:15.020 INFO  - Initializing the test runner.
+01:49:15.043 INFO  - Running the tests.
+01:49:20.997 INFO  - Generating reports.
+01:49:22.080 INFO  - Disposing the test runner.
+01:49:22.086 INFO  - Stop time: 01:49 (Total execution time: 9.456 seconds)
+01:49:22.087 INFO  - 
+01:49:22.105 INFO  - 4 run, 4 passed, 0 failed, 0 inconclusive, 0 skipped
+01:49:22.105 INFO  - 
+01:49:22.265 INFO  - Committing...
+01:49:22.821 INFO  - Visited Classes 5 of 6 (83.33)
+01:49:22.821 INFO  - Visited Methods 9 of 11 (81.82)
+01:49:22.821 INFO  - Visited Points 41 of 63 (65.08)
+01:49:22.821 INFO  - Visited Branches 19 of 35 (54.29)
+01:49:22.822 INFO  - 
+01:49:22.822 INFO  - ==== Alternative Results (includes all methods including those without corresponding source) ====
+01:49:22.822 INFO  - Alternative Visited Classes 8 of 9 (88.89)
+01:49:22.822 INFO  - Alternative Visited Methods 39 of 50 (78)
+01:49:23.159 INFO  - Sensor org.sonar.plugins.csharp.gallio.GallioSensor@55887585 done: 17166 ms
+01:49:23.159 INFO  - Sensor CpdSensor...
+01:49:23.160 INFO  - SonarBridgeEngine is used
+01:49:23.161 INFO  - Cross-project analysis disabled
+01:49:23.828 INFO  - Sensor CpdSensor done: 669 ms
+01:49:23.829 INFO  - Sensor InitialOpenIssuesSensor...
+01:49:24.103 INFO  - Sensor InitialOpenIssuesSensor done: 275 ms
+01:49:24.103 INFO  - Sensor ProfileSensor...
+01:49:24.495 INFO  - Sensor ProfileSensor done: 392 ms
+01:49:24.496 INFO  - Sensor ProfileEventsSensor...
+01:49:24.535 INFO  - Sensor ProfileEventsSensor done: 39 ms
+01:49:24.535 INFO  - Sensor ProjectLinksSensor...
+01:49:24.544 INFO  - Sensor ProjectLinksSensor done: 9 ms
+01:49:24.544 INFO  - Sensor VersionEventsSensor...
+01:49:24.668 INFO  - Sensor VersionEventsSensor done: 124 ms
+01:49:24.668 INFO  - Sensor FileHashSensor...
+01:49:24.672 INFO  - Sensor FileHashSensor done: 4 ms
+01:49:24.673 INFO  - Sensor org.sonar.plugins.csharp.gallio.CoverageReportSensor@71db9aa1...
+01:49:24.728 INFO  - Sensor org.sonar.plugins.csharp.gallio.CoverageReportSensor@71db9aa1 done: 55 ms
+01:49:25.218 INFO  - Execute decorators...
+01:49:27.293 INFO  - -------------  Scan BusTrackerDomain.Test
+01:49:27.294 INFO  - Load module settings
+01:49:27.750 INFO  - Quality profile : [name=Sonar way,language=cs]
+01:49:27.752 INFO  - Excluded tests: 
+01:49:27.752 INFO  -   **/package-info.java
+01:49:27.767 INFO  - Index files
+01:49:27.771 INFO  - 2 files indexed
+01:49:27.831 INFO  - Configure Maven plugins
+01:49:27.846 INFO  - Compare to previous analysis (2014-01-28)
+01:49:27.860 INFO  - Compare over 30 days (2013-12-31, analysis of 2014-01-28 01:41:49.0)
+01:49:27.904 INFO  - Initializer CSharpProjectInitializer...
+01:49:27.904 INFO  - Initializer CSharpProjectInitializer done: 0 ms
+01:49:27.904 INFO  - Index files
+01:49:27.907 INFO  - 2 files indexed
+01:49:27.907 INFO  - Base dir: C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test
+01:49:27.907 INFO  - Working dir: C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\.sonar
+01:49:27.907 INFO  - Test dirs: C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test
+01:49:27.907 INFO  - Source encoding: UTF-8, default locale: en_GB
+01:49:27.909 INFO  - Gallio won't execute as test execution has already been done.
+01:49:27.909 INFO  - FxCop plugin won't execute as it is set to 'skip' mode.
+01:49:27.912 INFO  - Sensor org.sonar.plugins.csharp.core.CSharpSourceImporter@49a2ef5a...
+01:49:28.564 INFO  - Sensor org.sonar.plugins.csharp.core.CSharpSourceImporter@49a2ef5a done: 652 ms
+01:49:28.564 INFO  - Sensor org.sonar.plugins.csharp.ndeps.sensor.NDepsSensor@5bd483d0...
+01:49:28.564 INFO  - NDeps executable not found: 'C:\Git\Bus Tracker\BusTrackerWeb\DependencyParser.exe'. The embedded version (1.2) will be used instead.
+01:49:28.565 INFO  - Executing command: C:\Git\Bus Tracker\BusTrackerWeb\.sonar\NDeps-1.2\DependencyParser.exe -a C:\Git\Bus Tracker\BusTrackerWeb\..\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\BusTrackerDomain.Test.dll -o C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\.sonar\ndeps-report.xml
+01:49:28.726 INFO  - Parsing BusTrackerDomain.Test.dll
+01:49:28.861 INFO  - Skip mscorlib... maybe in the GAC?
+01:49:28.867 INFO  - Parsing nunit.framework.dll
+01:49:28.868 INFO  - Parsing BusTrackerDomain.dll
+01:49:28.869 INFO  - Parsing NSubstitute.dll
+01:49:28.869 INFO  - Skip mscorlib... maybe in the GAC?
+01:49:28.869 INFO  - Skip System... maybe in the GAC?
+01:49:28.870 INFO  - Skip System.Xml... maybe in the GAC?
+01:49:28.870 INFO  - Skip System.Core... maybe in the GAC?
+01:49:28.870 INFO  - Skip System... maybe in the GAC?
+01:49:28.870 INFO  - Skip System.ServiceModel... maybe in the GAC?
+01:49:28.870 INFO  - Skip System.Xml... maybe in the GAC?
+01:49:28.870 INFO  - Skip System.Configuration... maybe in the GAC?
+01:49:29.161 INFO  - Sensor org.sonar.plugins.csharp.ndeps.sensor.NDepsSensor@5bd483d0 done: 597 ms
+01:49:29.161 INFO  - Sensor org.sonar.plugins.csharp.gallio.TestReportSensor@5d19fbc9...
+01:49:29.184 INFO  - Sensor org.sonar.plugins.csharp.gallio.TestReportSensor@5d19fbc9 done: 23 ms
+01:49:29.184 INFO  - Sensor CpdSensor...
+01:49:29.184 INFO  - SonarBridgeEngine is used
+01:49:29.184 INFO  - Sensor CpdSensor done: 0 ms
+01:49:29.184 INFO  - Sensor InitialOpenIssuesSensor...
+01:49:29.193 INFO  - Sensor InitialOpenIssuesSensor done: 9 ms
+01:49:29.194 INFO  - Sensor ProfileSensor...
+01:49:29.545 INFO  - Sensor ProfileSensor done: 351 ms
+01:49:29.545 INFO  - Sensor ProfileEventsSensor...
+01:49:29.551 INFO  - Sensor ProfileEventsSensor done: 6 ms
+01:49:29.552 INFO  - Sensor ProjectLinksSensor...
+01:49:29.556 INFO  - Sensor ProjectLinksSensor done: 4 ms
+01:49:29.556 INFO  - Sensor VersionEventsSensor...
+01:49:29.712 INFO  - Sensor VersionEventsSensor done: 156 ms
+01:49:29.713 INFO  - Sensor FileHashSensor...
+01:49:29.713 INFO  - Sensor FileHashSensor done: 0 ms
+01:49:29.992 INFO  - Execute decorators...
+01:49:30.412 INFO  - -------------  Scan BusTrackerDomain
+01:49:30.413 INFO  - Load module settings
+01:49:30.814 INFO  - Quality profile : [name=Sonar way,language=cs]
+01:49:30.816 INFO  - Excluded tests: 
+01:49:30.816 INFO  -   **/package-info.java
+01:49:30.836 INFO  - Index files
+01:49:30.842 INFO  - 4 files indexed
+01:49:30.920 INFO  - Configure Maven plugins
+01:49:30.934 INFO  - Compare to previous analysis (2014-01-28)
+01:49:30.950 INFO  - Compare over 30 days (2013-12-31, analysis of 2014-01-28 01:41:49.0)
+01:49:30.994 INFO  - Initializer CSharpProjectInitializer...
+01:49:30.995 INFO  - Initializer CSharpProjectInitializer done: 1 ms
+01:49:30.995 INFO  - Index files
+01:49:30.999 INFO  - 4 files indexed
+01:49:30.999 INFO  - Base dir: C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain
+01:49:30.999 INFO  - Working dir: C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain\.sonar
+01:49:30.999 INFO  - Source dirs: C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain
+01:49:30.999 INFO  - Source encoding: UTF-8, default locale: en_GB
+01:49:31.001 INFO  - Gallio won't execute as test execution has already been done.
+01:49:31.001 WARN  - /!\ SKIP StyleCop analysis: no rule defined for StyleCop in the "Sonar way" profile.
+01:49:31.001 INFO  - FxCop plugin won't execute as it is set to 'skip' mode.
+01:49:31.005 INFO  - Sensor org.sonar.plugins.csharp.core.CSharpSourceImporter@6f3eb402...
+01:49:31.545 INFO  - Sensor org.sonar.plugins.csharp.core.CSharpSourceImporter@6f3eb402 done: 540 ms
+01:49:31.545 INFO  - Sensor org.sonar.plugins.csharp.squid.CSharpSquidSensor@7d9c285c...
+01:49:32.164 INFO  - Sensor org.sonar.plugins.csharp.squid.CSharpSquidSensor@7d9c285c done: 619 ms
+01:49:32.165 INFO  - Sensor org.sonar.plugins.csharp.gendarme.GendarmeSensor$CSharpRegularGendarmeSensor@25098b5d...
+01:49:32.180 INFO  - Gendarme executable not found: 'C:\Program Files\gendarme-2.10-bin\gendarme.exe'. The embedded version (2.10) will be used instead.
+01:49:32.181 INFO  - Executing command: C:\Git\Bus Tracker\BusTrackerWeb\.sonar\gendarme-2.10-bin\gendarme.exe --config C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain\.sonar\sonar.Gendarme --xml C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain\.sonar\gendarme-report.xml --quiet --confidence normal+ --severity all C:\Git\Bus Tracker\BusTrackerWeb\..\BusTrackerDomain\BusTrackerDomain\bin\Debug\BusTrackerDomain.dll
+01:49:34.664 INFO  - Sensor org.sonar.plugins.csharp.gendarme.GendarmeSensor$CSharpRegularGendarmeSensor@25098b5d done: 2499 ms
+01:49:34.664 INFO  - Sensor org.sonar.plugins.csharp.ndeps.sensor.NDepsSensor@159c99aa...
+01:49:34.665 INFO  - NDeps executable not found: 'C:\Git\Bus Tracker\BusTrackerWeb\DependencyParser.exe'. The embedded version (1.2) will be used instead.
+01:49:34.665 INFO  - Executing command: C:\Git\Bus Tracker\BusTrackerWeb\.sonar\NDeps-1.2\DependencyParser.exe -a C:\Git\Bus Tracker\BusTrackerWeb\..\BusTrackerDomain\BusTrackerDomain\bin\Debug\BusTrackerDomain.dll -o C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain\.sonar\ndeps-report.xml -d yes
+01:49:34.812 INFO  - Parsing BusTrackerDomain.dll
+01:49:35.063 INFO  - Skip mscorlib... maybe in the GAC?
+01:49:35.125 INFO  - Sensor org.sonar.plugins.csharp.ndeps.sensor.NDepsSensor@159c99aa done: 461 ms
+01:49:35.125 INFO  - Sensor org.sonar.plugins.csharp.gallio.CoverageReportSensor@5c2c72fb...
+01:49:35.182 INFO  - Sensor org.sonar.plugins.csharp.gallio.CoverageReportSensor@5c2c72fb done: 57 ms
+01:49:35.182 INFO  - Sensor CpdSensor...
+01:49:35.182 INFO  - SonarBridgeEngine is used
+01:49:35.183 INFO  - Cross-project analysis disabled
+01:49:35.249 INFO  - Sensor CpdSensor done: 67 ms
+01:49:35.249 INFO  - Sensor InitialOpenIssuesSensor...
+01:49:35.266 INFO  - Sensor InitialOpenIssuesSensor done: 17 ms
+01:49:35.266 INFO  - Sensor ProfileSensor...
+01:49:35.547 INFO  - Sensor ProfileSensor done: 281 ms
+01:49:35.547 INFO  - Sensor ProfileEventsSensor...
+01:49:35.552 INFO  - Sensor ProfileEventsSensor done: 5 ms
+01:49:35.552 INFO  - Sensor ProjectLinksSensor...
+01:49:35.555 INFO  - Sensor ProjectLinksSensor done: 3 ms
+01:49:35.555 INFO  - Sensor VersionEventsSensor...
+01:49:35.623 INFO  - Sensor VersionEventsSensor done: 68 ms
+01:49:35.623 INFO  - Sensor FileHashSensor...
+01:49:35.624 INFO  - Sensor FileHashSensor done: 1 ms
+01:49:35.846 INFO  - Execute decorators...
+01:49:37.393 INFO  - -------------  Scan SkanetrafikenServiceAgent
+01:49:37.394 INFO  - Load module settings
+01:49:37.779 INFO  - Quality profile : [name=Sonar way,language=cs]
+01:49:37.780 INFO  - Excluded tests: 
+01:49:37.780 INFO  -   **/package-info.java
+01:49:37.787 INFO  - Index files
+01:49:37.796 INFO  - 6 files indexed
+01:49:37.846 INFO  - Configure Maven plugins
+01:49:37.853 INFO  - Compare to previous analysis (2014-01-28)
+01:49:37.861 INFO  - Compare over 30 days (2013-12-31, analysis of 2014-01-28 01:41:49.0)
+01:49:37.896 INFO  - Initializer CSharpProjectInitializer...
+01:49:37.896 INFO  - Initializer CSharpProjectInitializer done: 0 ms
+01:49:37.896 INFO  - Index files
+01:49:37.902 INFO  - 6 files indexed
+01:49:37.902 INFO  - Base dir: C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent
+01:49:37.902 INFO  - Working dir: C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\.sonar
+01:49:37.902 INFO  - Source dirs: C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent
+01:49:37.902 INFO  - Source encoding: UTF-8, default locale: en_GB
+01:49:37.904 INFO  - Gallio won't execute as test execution has already been done.
+01:49:37.904 WARN  - /!\ SKIP StyleCop analysis: no rule defined for StyleCop in the "Sonar way" profile.
+01:49:37.904 INFO  - FxCop plugin won't execute as it is set to 'skip' mode.
+01:49:37.908 INFO  - Sensor org.sonar.plugins.csharp.core.CSharpSourceImporter@7ffd7174...
+01:49:39.105 INFO  - Sensor org.sonar.plugins.csharp.core.CSharpSourceImporter@7ffd7174 done: 1197 ms
+01:49:39.106 INFO  - Sensor org.sonar.plugins.csharp.squid.CSharpSquidSensor@5823b851...
+01:49:39.684 INFO  - Sensor org.sonar.plugins.csharp.squid.CSharpSquidSensor@5823b851 done: 578 ms
+01:49:39.684 INFO  - Sensor org.sonar.plugins.csharp.gendarme.GendarmeSensor$CSharpRegularGendarmeSensor@6074758e...
+01:49:39.700 INFO  - Gendarme executable not found: 'C:\Program Files\gendarme-2.10-bin\gendarme.exe'. The embedded version (2.10) will be used instead.
+01:49:39.701 INFO  - Executing command: C:\Git\Bus Tracker\BusTrackerWeb\.sonar\gendarme-2.10-bin\gendarme.exe --config C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\.sonar\sonar.Gendarme --xml C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\.sonar\gendarme-report.xml --quiet --confidence normal+ --severity all C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\bin\Debug\SkanetrafikenServiceAgent.dll
+01:49:42.704 INFO  - Sensor org.sonar.plugins.csharp.gendarme.GendarmeSensor$CSharpRegularGendarmeSensor@6074758e done: 3020 ms
+01:49:42.705 INFO  - Sensor org.sonar.plugins.csharp.ndeps.sensor.NDepsSensor@7dd1ef1a...
+01:49:42.705 INFO  - NDeps executable not found: 'C:\Git\Bus Tracker\BusTrackerWeb\DependencyParser.exe'. The embedded version (1.2) will be used instead.
+01:49:42.705 INFO  - Executing command: C:\Git\Bus Tracker\BusTrackerWeb\.sonar\NDeps-1.2\DependencyParser.exe -a C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\bin\Debug\SkanetrafikenServiceAgent.dll -o C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\.sonar\ndeps-report.xml -d yes
+01:49:43.180 INFO  - Parsing SkanetrafikenServiceAgent.dll
+01:49:43.458 INFO  - Skip mscorlib... maybe in the GAC?
+01:49:43.458 INFO  - Parsing BusTrackerDomain.dll
+01:49:43.458 INFO  - Skip System.Xml... maybe in the GAC?
+01:49:43.459 INFO  - Skip System.Xml.Linq... maybe in the GAC?
+01:49:43.459 INFO  - Skip System.Core... maybe in the GAC?
+01:49:43.459 INFO  - Skip System... maybe in the GAC?
+01:49:43.550 INFO  - Sensor org.sonar.plugins.csharp.ndeps.sensor.NDepsSensor@7dd1ef1a done: 845 ms
+01:49:43.550 INFO  - Sensor org.sonar.plugins.csharp.gallio.CoverageReportSensor@61a8d47e...
+01:49:43.808 INFO  - Sensor org.sonar.plugins.csharp.gallio.CoverageReportSensor@61a8d47e done: 258 ms
+01:49:43.808 INFO  - Sensor CpdSensor...
+01:49:43.808 INFO  - SonarBridgeEngine is used
+01:49:43.809 INFO  - Cross-project analysis disabled
+01:49:43.892 INFO  - Sensor CpdSensor done: 84 ms
+01:49:43.892 INFO  - Sensor InitialOpenIssuesSensor...
+01:49:43.997 INFO  - Sensor InitialOpenIssuesSensor done: 105 ms
+01:49:43.997 INFO  - Sensor ProfileSensor...
+01:49:44.272 INFO  - Sensor ProfileSensor done: 275 ms
+01:49:44.272 INFO  - Sensor ProfileEventsSensor...
+01:49:44.277 INFO  - Sensor ProfileEventsSensor done: 5 ms
+01:49:44.278 INFO  - Sensor ProjectLinksSensor...
+01:49:44.281 INFO  - Sensor ProjectLinksSensor done: 3 ms
+01:49:44.281 INFO  - Sensor VersionEventsSensor...
+01:49:44.415 INFO  - Sensor VersionEventsSensor done: 134 ms
+01:49:44.505 INFO  - Sensor FileHashSensor...
+01:49:44.507 INFO  - Sensor FileHashSensor done: 2 ms
+01:49:44.759 INFO  - Execute decorators...
+01:49:46.109 INFO  - -------------  Scan SkanetrafikenServiceAgent.Test
+01:49:46.110 INFO  - Load module settings
+01:49:46.547 INFO  - Quality profile : [name=Sonar way,language=cs]
+01:49:46.548 INFO  - Excluded tests: 
+01:49:46.548 INFO  -   **/package-info.java
+01:49:46.557 INFO  - Index files
+01:49:46.562 INFO  - 2 files indexed
+01:49:46.622 INFO  - Configure Maven plugins
+01:49:46.629 INFO  - Compare to previous analysis (2014-01-28)
+01:49:46.634 INFO  - Compare over 30 days (2013-12-31, analysis of 2014-01-28 01:41:49.0)
+01:49:46.668 INFO  - Initializer CSharpProjectInitializer...
+01:49:46.668 INFO  - Initializer CSharpProjectInitializer done: 0 ms
+01:49:46.668 INFO  - Index files
+01:49:46.671 INFO  - 2 files indexed
+01:49:46.671 INFO  - Base dir: C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test
+01:49:46.671 INFO  - Working dir: C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\.sonar
+01:49:46.671 INFO  - Test dirs: C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test
+01:49:46.671 INFO  - Source encoding: UTF-8, default locale: en_GB
+01:49:46.673 INFO  - Gallio won't execute as test execution has already been done.
+01:49:46.673 INFO  - FxCop plugin won't execute as it is set to 'skip' mode.
+01:49:46.675 INFO  - Sensor org.sonar.plugins.csharp.core.CSharpSourceImporter@39575739...
+01:49:46.905 INFO  - Sensor org.sonar.plugins.csharp.core.CSharpSourceImporter@39575739 done: 230 ms
+01:49:46.906 INFO  - Sensor org.sonar.plugins.csharp.ndeps.sensor.NDepsSensor@59acb21d...
+01:49:46.906 INFO  - NDeps executable not found: 'C:\Git\Bus Tracker\BusTrackerWeb\DependencyParser.exe'. The embedded version (1.2) will be used instead.
+01:49:46.907 INFO  - Executing command: C:\Git\Bus Tracker\BusTrackerWeb\.sonar\NDeps-1.2\DependencyParser.exe -a C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\SkanetrafikenServiceAgent.Test.dll -o C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\.sonar\ndeps-report.xml
+01:49:47.086 INFO  - Parsing SkanetrafikenServiceAgent.Test.dll
+01:49:47.254 INFO  - Skip mscorlib... maybe in the GAC?
+01:49:47.255 INFO  - Parsing SkanetrafikenServiceAgent.dll
+01:49:47.262 INFO  - Parsing nunit.framework.dll
+01:49:47.262 INFO  - Skip System.Xml... maybe in the GAC?
+01:49:47.264 INFO  - Parsing NSubstitute.dll
+01:49:47.298 INFO  - Parsing BusTrackerDomain.dll
+01:49:47.298 INFO  - Skip System.Core... maybe in the GAC?
+01:49:47.298 INFO  - Skip System.Xml.Linq... maybe in the GAC?
+01:49:47.298 INFO  - Skip System... maybe in the GAC?
+01:49:47.299 INFO  - Skip mscorlib... maybe in the GAC?
+01:49:47.299 INFO  - Skip System... maybe in the GAC?
+01:49:47.299 INFO  - Skip System.Xml... maybe in the GAC?
+01:49:47.299 INFO  - Skip System.ServiceModel... maybe in the GAC?
+01:49:47.299 INFO  - Skip System.Configuration... maybe in the GAC?
+01:49:47.455 INFO  - Sensor org.sonar.plugins.csharp.ndeps.sensor.NDepsSensor@59acb21d done: 549 ms
+01:49:47.455 INFO  - Sensor org.sonar.plugins.csharp.gallio.TestReportSensor@58e1bbe9...
+01:49:47.467 INFO  - Sensor org.sonar.plugins.csharp.gallio.TestReportSensor@58e1bbe9 done: 12 ms
+01:49:47.467 INFO  - Sensor CpdSensor...
+01:49:47.467 INFO  - SonarBridgeEngine is used
+01:49:47.467 INFO  - Sensor CpdSensor done: 0 ms
+01:49:47.467 INFO  - Sensor InitialOpenIssuesSensor...
+01:49:47.474 INFO  - Sensor InitialOpenIssuesSensor done: 7 ms
+01:49:47.474 INFO  - Sensor ProfileSensor...
+01:49:47.830 INFO  - Sensor ProfileSensor done: 356 ms
+01:49:47.830 INFO  - Sensor ProfileEventsSensor...
+01:49:47.835 INFO  - Sensor ProfileEventsSensor done: 5 ms
+01:49:47.836 INFO  - Sensor ProjectLinksSensor...
+01:49:47.838 INFO  - Sensor ProjectLinksSensor done: 2 ms
+01:49:47.839 INFO  - Sensor VersionEventsSensor...
+01:49:47.912 INFO  - Sensor VersionEventsSensor done: 73 ms
+01:49:47.912 INFO  - Sensor FileHashSensor...
+01:49:47.913 INFO  - Sensor FileHashSensor done: 1 ms
+01:49:48.106 INFO  - Execute decorators...
+01:49:48.456 INFO  - -------------  Scan BusTracker
+01:49:48.457 INFO  - Load module settings
+01:49:48.965 INFO  - Quality profile : [name=Sonar way,language=cs]
+01:49:48.966 INFO  - Excluded tests: 
+01:49:48.966 INFO  -   **/package-info.java
+01:49:48.973 INFO  - Index files
+01:49:48.974 INFO  - 0 files indexed
+01:49:49.027 INFO  - Configure Maven plugins
+01:49:49.034 INFO  - Compare to previous analysis (2014-01-28)
+01:49:49.040 INFO  - Compare over 30 days (2013-12-31, analysis of 2014-01-28 01:41:49.0)
+01:49:49.074 INFO  - Initializer CSharpProjectInitializer...
+01:49:49.074 INFO  - Initializer CSharpProjectInitializer done: 0 ms
+01:49:49.074 INFO  - Index files
+01:49:49.074 INFO  - 0 files indexed
+01:49:49.074 INFO  - Base dir: C:\Git\Bus Tracker\BusTrackerWeb
+01:49:49.074 INFO  - Working dir: C:\Git\Bus Tracker\BusTrackerWeb\.sonar
+01:49:49.074 INFO  - Source encoding: UTF-8, default locale: en_GB
+01:49:49.075 INFO  - Gallio won't execute as test execution has already been done.
+01:49:49.077 INFO  - Sensor CpdSensor...
+01:49:49.077 INFO  - SonarBridgeEngine is used
+01:49:49.077 INFO  - Sensor CpdSensor done: 0 ms
+01:49:49.077 INFO  - Sensor InitialOpenIssuesSensor...
+01:49:49.084 INFO  - Sensor InitialOpenIssuesSensor done: 7 ms
+01:49:49.084 INFO  - Sensor ProfileSensor...
+01:49:49.325 INFO  - Sensor ProfileSensor done: 241 ms
+01:49:49.325 INFO  - Sensor ProfileEventsSensor...
+01:49:49.330 INFO  - Sensor ProfileEventsSensor done: 5 ms
+01:49:49.330 INFO  - Sensor ProjectLinksSensor...
+01:49:49.332 INFO  - Sensor ProjectLinksSensor done: 2 ms
+01:49:49.333 INFO  - Sensor VersionEventsSensor...
+01:49:49.402 INFO  - Sensor VersionEventsSensor done: 69 ms
+01:49:49.403 INFO  - Sensor FileHashSensor...
+01:49:49.403 INFO  - Sensor FileHashSensor done: 0 ms
+01:49:49.587 INFO  - Execute decorators...
+01:49:49.910 INFO  - Store results in database
+01:49:50.942 INFO  - ANALYSIS SUCCESSFUL, you can browse http://localhost:9000/dashboard/index/OpenMind:BusTracker
+01:49:51.012 INFO  - Executing post-job class org.sonar.plugins.core.issue.notification.SendIssueNotificationsPostJob
+01:49:51.126 INFO  - Executing post-job class org.sonar.plugins.core.batch.IndexProjectPostJob
+01:49:51.467 INFO  - Executing post-job class org.sonar.plugins.dbcleaner.ProjectPurgePostJob
+01:49:51.482 INFO  - -> Keep one snapshot per day between 2014-01-02 and 2014-01-29
+01:49:51.484 INFO  - <- Delete snapshot: 2014-01-28T03:10:19+0100 [137]
+01:49:51.908 INFO  - <- Delete snapshot: 2014-01-28T03:17:06+0100 [178]
+01:49:52.274 INFO  - <- Delete snapshot: 2014-01-28T03:31:34+0100 [219]
+01:49:53.082 INFO  - -> Keep one snapshot per week between 2013-01-31 and 2014-01-02
+01:49:53.082 INFO  - -> Keep one snapshot per month between 2009-02-05 and 2013-01-31
+01:49:53.082 INFO  - -> Delete data prior to: 2009-02-05
+01:49:53.091 INFO  - -> Clean BusTracker [id=1]
+01:49:53.093 INFO  - -> Clean BusTrackerWeb [id=2]
+01:49:53.095 INFO  - -> Clean BusTrackerDomain.Test [id=3]
+01:49:53.097 INFO  - -> Clean BusTrackerDomain [id=4]
+01:49:53.099 INFO  - -> Clean SkanetrafikenServiceAgent [id=5]
+01:49:53.103 INFO  - -> Clean SkanetrafikenServiceAgent.Test [id=6]
+INFO: ------------------------------------------------------------------------
+INFO: EXECUTION SUCCESS
+INFO: ------------------------------------------------------------------------
+Total time: 1:30.130s
+Final Memory: 16M/519M
+INFO: ------------------------------------------------------------------------

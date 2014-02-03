@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dependencies name="BusTrackerWeb" version="1.0.0.0">
+  <Assembly name="BusTrackerWeb" version="1.0.0.0">
+    <References>
+      <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Web" fullName="System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="4.0.0.0" />
+      <Reference name="System.Web.Optimization" fullName="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="1.0.0.0" />
+      <Reference name="System.Web.Mvc" fullName="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="4.0.0.0" />
+      <Reference name="System.Web.Http" fullName="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="4.0.0.0" />
+      <Reference name="System.Web.Http.WebHost" fullName="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="4.0.0.0" />
+    </References>
+    <TypeReferences />
+    <Design>
+      <type fullName="BusTrackerWeb.BundleConfig" source="c:\Git\Bus Tracker\BusTrackerWeb\BusTrackerWeb\App_Start\BundleConfig.cs" rfc="6" dit="1" />
+      <type fullName="BusTrackerWeb.FilterConfig" source="c:\Git\Bus Tracker\BusTrackerWeb\BusTrackerWeb\App_Start\FilterConfig.cs" rfc="4" dit="1" />
+      <type fullName="BusTrackerWeb.RouteConfig" source="c:\Git\Bus Tracker\BusTrackerWeb\BusTrackerWeb\App_Start\RouteConfig.cs" rfc="4" dit="1" />
+      <type fullName="BusTrackerWeb.WebApiConfig" source="c:\Git\Bus Tracker\BusTrackerWeb\BusTrackerWeb\App_Start\WebApiConfig.cs" rfc="2" dit="1" />
+      <type fullName="BusTrackerWeb.MvcApplication" source="c:\Git\Bus Tracker\BusTrackerWeb\BusTrackerWeb\Global.asax.cs" rfc="10" dit="2">
+        <block>
+          <element type="Method" name="System.Void Application_Start()" />
+        </block>
+      </type>
+      <type fullName="&lt;Module&gt;" source="" rfc="0" dit="0" />
+      <type fullName="&lt;&gt;f__AnonymousType0`3" source="" rfc="0" dit="1" />
+      <type fullName="&lt;&gt;f__AnonymousType1`1" source="" rfc="0" dit="1" />
+    </Design>
+  </Assembly>
+  <Assembly name="System.Web.Optimization" version="1.0.0.0">
+    <References>
+      <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Web" fullName="System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="4.0.0.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System" fullName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="WebGrease" fullName="WebGrease, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="1.0.0.0" />
+      <Reference name="Microsoft.Web.Infrastructure" fullName="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="1.0.0.0" />
+    </References>
+  </Assembly>
+  <Assembly name="System.Web.Mvc" version="4.0.0.0">
+    <References>
+      <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.ComponentModel.DataAnnotations" fullName="System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="4.0.0.0" />
+      <Reference name="System.Web.Razor" fullName="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="2.0.0.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Web.WebPages.Razor" fullName="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="2.0.0.0" />
+      <Reference name="System.Web.WebPages" fullName="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="2.0.0.0" />
+      <Reference name="System.Web" fullName="System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="4.0.0.0" />
+      <Reference name="System" fullName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Runtime.Caching" fullName="System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="4.0.0.0" />
+      <Reference name="Microsoft.Web.Infrastructure" fullName="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="1.0.0.0" />
+      <Reference name="System.Web.Extensions" fullName="System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="4.0.0.0" />
+      <Reference name="System.Configuration" fullName="System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="4.0.0.0" />
+      <Reference name="System.Xml" fullName="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Data.Linq" fullName="System.Data.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Data.Entity" fullName="System.Data.Entity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+    </References>
+  </Assembly>
+  <Assembly name="System.Web.Http" version="4.0.0.0">
+    <References>
+      <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Net.Http" fullName="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="2.0.0.0" />
+      <Reference name="System.Xml" fullName="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Net.Http.Formatting" fullName="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="4.0.0.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System" fullName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.ComponentModel.DataAnnotations" fullName="System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="4.0.0.0" />
+      <Reference name="Newtonsoft.Json" fullName="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" version="4.5.0.0" />
+      <Reference name="System.Runtime.Serialization" fullName="System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+    </References>
+  </Assembly>
+  <Assembly name="System.Web.Http.WebHost" version="4.0.0.0">
+    <References>
+      <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Web" fullName="System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="4.0.0.0" />
+      <Reference name="System.Web.Http" fullName="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="4.0.0.0" />
+      <Reference name="System" fullName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Net.Http" fullName="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="2.0.0.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Net.Http.Formatting" fullName="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="4.0.0.0" />
+      <Reference name="System.Xml" fullName="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="Microsoft.Web.Infrastructure" fullName="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="1.0.0.0" />
+    </References>
+  </Assembly>
+  <Assembly name="WebGrease" version="1.0.0.0">
+    <References>
+      <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System" fullName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Xml.Linq" fullName="System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Windows.Forms" fullName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="Antlr3.Runtime" fullName="Antlr3.Runtime, Version=3.3.1.7705, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="3.3.1.7705" />
+      <Reference name="System.Drawing" fullName="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="4.0.0.0" />
+      <Reference name="System.Xml" fullName="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+    </References>
+  </Assembly>
+  <Assembly name="Microsoft.Web.Infrastructure" version="1.0.0.0">
+    <References>
+      <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System" fullName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Web" fullName="System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="4.0.0.0" />
+      <Reference name="System.Configuration" fullName="System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="4.0.0.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+    </References>
+  </Assembly>
+  <Assembly name="System.Web.Razor" version="2.0.0.0">
+    <References>
+      <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System" fullName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+    </References>
+  </Assembly>
+  <Assembly name="System.Web.WebPages.Razor" version="2.0.0.0">
+    <References>
+      <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Configuration" fullName="System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="4.0.0.0" />
+      <Reference name="System.Web" fullName="System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="4.0.0.0" />
+      <Reference name="System.Web.Razor" fullName="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="2.0.0.0" />
+      <Reference name="System" fullName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Web.WebPages" fullName="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="2.0.0.0" />
+    </References>
+  </Assembly>
+  <Assembly name="System.Web.WebPages" version="2.0.0.0">
+    <References>
+      <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Web" fullName="System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="4.0.0.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.ComponentModel.DataAnnotations" fullName="System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="4.0.0.0" />
+      <Reference name="System" fullName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="Microsoft.Web.Infrastructure" fullName="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="1.0.0.0" />
+      <Reference name="System.Xml.Linq" fullName="System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="Microsoft.CSharp" fullName="Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="4.0.0.0" />
+      <Reference name="System.Web.Razor" fullName="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="2.0.0.0" />
+      <Reference name="System.Data.Linq" fullName="System.Data.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Web.WebPages.Deployment" fullName="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="2.0.0.0" />
+    </References>
+  </Assembly>
+  <Assembly name="System.Net.Http.Formatting" version="4.0.0.0">
+    <References>
+      <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Net.Http" fullName="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="2.0.0.0" />
+      <Reference name="System" fullName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="Newtonsoft.Json" fullName="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" version="4.5.0.0" />
+      <Reference name="System.Runtime.Serialization" fullName="System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Xml" fullName="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Configuration" fullName="System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="4.0.0.0" />
+      <Reference name="System.Xml.Linq" fullName="System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+    </References>
+  </Assembly>
+  <Assembly name="Newtonsoft.Json" version="4.5.0.0">
+    <References>
+      <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System" fullName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Xml" fullName="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Xml.Linq" fullName="System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Runtime.Serialization" fullName="System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Data" fullName="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+    </References>
+  </Assembly>
+  <Assembly name="Antlr3.Runtime" version="3.3.1.7705">
+    <References>
+      <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System" fullName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+    </References>
+  </Assembly>
+  <Assembly name="System.Web.WebPages.Deployment" version="2.0.0.0">
+    <References>
+      <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System" fullName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Web" fullName="System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="4.0.0.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="Microsoft.Web.Infrastructure" fullName="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="1.0.0.0" />
+      <Reference name="System.Configuration" fullName="System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="4.0.0.0" />
+    </References>
+  </Assembly>
+</Dependencies>

@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using NSubstitute;
-using System.Linq;
-using BusTrackerDomain;
-using BusTrackerDomain.Entity;
+﻿using BusTrackerDomain.Entity;
 using BusTrackerDomain.Interface;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NSubstitute;
+using NUnit.Framework;
+using System.Collections.Generic;
 
 namespace BusTrackerDomain.Test
 {
-    [TestClass]
+    [TestFixture]
     public class BusTrackerTest
     {
-        [TestMethod]
+        [Test]
         public void GetStationInfo_ForValidStationId_ReturnsStationTimeTable()
         {
             const int exampleStationId = 1;
@@ -24,7 +21,7 @@ namespace BusTrackerDomain.Test
 
             var busTracker = new BusTracker(serviceAgent);
 
-            Assert.AreSame(exampleStationTimeTable, busTracker.GetStationInfo(exampleStationId));
+            Assert.AreEqual(exampleStationTimeTable, busTracker.GetStationInfo(exampleStationId));
         }
     }
 }

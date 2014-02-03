@@ -1,20 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-using System.Xml;
-using System.Linq;
-using System.Xml.Serialization;
-using BusTrackerDomain;
-using BusTrackerWeb.SkanetrafikenServiceAgent;
+﻿using BusTrackerWeb.SkanetrafikenServiceAgent;
 using BusTrackerWeb.SkanetrafikenServiceAgent.Entity;
 using BusTrackerWeb.SkanetrafikenServiceAgent.Interface;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NSubstitute;
+using NUnit.Framework;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Xml.Serialization;
 
 namespace SkanetrafikenServiceAgent.Test
 {
-    [TestClass]
+    [TestFixture]
     public class SkanetrafikenServiceAgentTest
     {
         private string SerializeObject<T>(T toSerialize)
@@ -28,27 +25,32 @@ namespace SkanetrafikenServiceAgent.Test
             }
         }
 
-        private string CreateGetDepartureArrivalResponse(GetDepartureArrivalResult.Line line)
+        private string CreateGetDepartureArrivalResponse(GetDepartureArrivalResult.Line line, string stationName)
         {
             return SerializeObject<GetDepartureArrivalResult>(new GetDepartureArrivalResult()
                 {
                     Lines = new List<GetDepartureArrivalResult.Line>()
                         {
                             line
+                        },
+                    StopAreaData = new GetDepartureArrivalResult.StopAreaDataObject()
+                        {
+                            Name = stationName
                         }
                 });
         }
 
-        [TestMethod]
+        [Test]
         public void ParseProxyResult_GivenAServiceIdInProxyAnswer_ServiceIdIsParsed()
         {
-            const int exampleStation = 0;
+            const string exampleStationName = "TestStation";
+            const int exampleStationId = 0;
             const int exampleNo = 1;
 
             var exampleResult = CreateGetDepartureArrivalResponse(new GetDepartureArrivalResult.Line()
                 {
                     No = exampleNo,
-                });
+                }, exampleStationName);
 
             var serviceProxy = Substitute.For<IServiceProxy>();
 
@@ -56,19 +58,20 @@ namespace SkanetrafikenServiceAgent.Test
 
             var serviceAgent = new ServiceAgent(serviceProxy);
 
-            Assert.AreEqual(exampleNo, serviceAgent.GetStationInfo(exampleStation).FirstOrDefault().ServiceId);
+            Assert.AreEqual(exampleNo, serviceAgent.GetStationInfo(exampleStationId).FirstOrDefault().Service.ServiceId);
         }
 
-        [TestMethod]
+        [Test]
         public void ParseProxyResult_GivenAJourneyTimeWithoutDeviationInProxyAnswer_JourneyTimeIsParsed()
         {
-            const int exampleStation = 0;
+            const string exampleStationName = "TestStation";
+            const int exampleStationId = 0;
             DateTime exampleDateTime = DateTime.Parse("2001-01-01");
 
             var exampleResult = CreateGetDepartureArrivalResponse(new GetDepartureArrivalResult.Line()
             {
                 JourneyDateTime = exampleDateTime,
-            });
+            }, exampleStationName);
 
             var serviceProxy = Substitute.For<IServiceProxy>();
 
@@ -76,25 +79,26 @@ namespace SkanetrafikenServiceAgent.Test
 
             var serviceAgent = new ServiceAgent(serviceProxy);
 
-            Assert.AreEqual(exampleDateTime, serviceAgent.GetStationInfo(exampleStation).FirstOrDefault().DepartureTime);
+            Assert.AreEqual(exampleDateTime, serviceAgent.GetStationInfo(exampleStationId).FirstOrDefault().DepartureTime);
         }
 
-        [TestMethod]
+        [Test]
         public void ParseProxyResult_GivenADeviationInProxyAnswer_DeviationIsParsed()
         {
-            const int exampleStation = 0;
+            const string exampleStationName = "TestStation";
+            const int exampleStationId = 0;
             const int exampleDeviation = 1;
 
             var exampleResult = CreateGetDepartureArrivalResponse(new GetDepartureArrivalResult.Line()
-            {
-                RealTime = new GetDepartureArrivalResult.RealTime()
                 {
-                    RealTimeInfo = new GetDepartureArrivalResult.RealTimeInfo()
-                    {
-                        DepTimeDeviation = exampleDeviation
-                    }
-                }
-            });
+                    RealTime = new GetDepartureArrivalResult.RealTime()
+                        {
+                            RealTimeInfo = new GetDepartureArrivalResult.RealTimeInfo()
+                                {
+                                    DepTimeDeviation = exampleDeviation
+                                }
+                        }
+                }, exampleStationName);
 
             var serviceProxy = Substitute.For<IServiceProxy>();
 
@@ -102,7 +106,7 @@ namespace SkanetrafikenServiceAgent.Test
 
             var serviceAgent = new ServiceAgent(serviceProxy);
 
-            Assert.AreEqual(TimeSpan.FromMinutes(exampleDeviation), serviceAgent.GetStationInfo(exampleStation).FirstOrDefault().Delay);
+            Assert.AreEqual(TimeSpan.FromMinutes(exampleDeviation), serviceAgent.GetStationInfo(exampleStationId).FirstOrDefault().Delay);
         }
     }
 }

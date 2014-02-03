@@ -41,6 +41,9 @@
   <ItemGroup>
     <Compile Include="BusTracker.cs" />
     <Compile Include="Entity\DepartureInfo.cs" />
+    <Compile Include="Entity\Service.cs" />
+    <Compile Include="Entity\ServiceRoute.cs" />
+    <Compile Include="Entity\Station.cs" />
     <Compile Include="Interface\IServiceAgent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

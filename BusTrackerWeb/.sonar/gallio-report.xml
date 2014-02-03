@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.gallio.org/">
+  <testPackage shadowCopy="false" debug="false">
+    <files>
+      <file>C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\BusTrackerDomain.Test.dll</file>
+      <file>C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\SkanetrafikenServiceAgent.Test.dll</file>
+    </files>
+    <hintDirectories />
+    <excludedFrameworkIds />
+    <properties />
+  </testPackage>
+  <testModel>
+    <test id="c2722843734a7a54" name="Root" fullName="" isTestCase="false">
+      <codeReference />
+      <codeLocation />
+      <metadata>
+        <entry key="TestKind">
+          <value>Root</value>
+        </entry>
+      </metadata>
+      <children>
+        <test id="e99e4676da95d529" name="BusTrackerDomain.Test" fullName="BusTrackerDomain.Test" isTestCase="false">
+          <codeReference assembly="BusTrackerDomain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+          <codeLocation path="C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\BusTrackerDomain.Test.dll" />
+          <metadata>
+            <entry key="TestKind">
+              <value>NUnit v2.5.6+ Assembly</value>
+            </entry>
+            <entry key="CodeBase">
+              <value>C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\BusTrackerDomain.Test.dll</value>
+            </entry>
+            <entry key="Copyright">
+              <value>Copyright ©  2014</value>
+            </entry>
+            <entry key="FileVersion">
+              <value>1.0.0.0</value>
+            </entry>
+            <entry key="Product">
+              <value>BusTrackerDomain.Test</value>
+            </entry>
+            <entry key="Title">
+              <value>BusTrackerDomain.Test</value>
+            </entry>
+            <entry key="Version">
+              <value>1.0.0.0</value>
+            </entry>
+            <entry key="Framework">
+              <value>NUnit v2.6.3.13283</value>
+            </entry>
+            <entry key="File">
+              <value>C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\BusTrackerDomain.Test.dll</value>
+            </entry>
+          </metadata>
+          <children>
+            <test id="55a6ae20daebffb2" name="BusTrackerDomain" fullName="BusTrackerDomain.Test/BusTrackerDomain" isTestCase="false">
+              <codeReference assembly="BusTrackerDomain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+              <codeLocation path="C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\BusTrackerDomain.Test.dll" />
+              <metadata>
+                <entry key="TestKind">
+                  <value>Namespace</value>
+                </entry>
+              </metadata>
+              <children>
+                <test id="1ba50ec3fadf5745" name="Test" fullName="BusTrackerDomain.Test/BusTrackerDomain/Test" isTestCase="false">
+                  <codeReference assembly="BusTrackerDomain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                  <codeLocation path="C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\BusTrackerDomain.Test.dll" />
+                  <metadata>
+                    <entry key="TestKind">
+                      <value>Namespace</value>
+                    </entry>
+                  </metadata>
+                  <children>
+                    <test id="f27aca9c255d43be" name="BusTrackerTest" fullName="BusTrackerDomain.Test/BusTrackerDomain/Test/BusTrackerTest" isTestCase="false">
+                      <codeReference assembly="BusTrackerDomain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" namespace="BusTrackerDomain.Test" type="BusTrackerDomain.Test.BusTrackerTest" />
+                      <codeLocation path="c:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\BusTrackerTest.cs" />
+                      <metadata>
+                        <entry key="TestKind">
+                          <value>Fixture</value>
+                        </entry>
+                      </metadata>
+                      <children>
+                        <test id="5627b86bac45bf6f" name="GetStationInfo_ForValidStationId_ReturnsStationTimeTable" fullName="BusTrackerDomain.Test/BusTrackerDomain/Test/BusTrackerTest/GetStationInfo_ForValidStationId_ReturnsStationTimeTable" isTestCase="true">
+                          <codeReference assembly="BusTrackerDomain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" namespace="BusTrackerDomain.Test" type="BusTrackerDomain.Test.BusTrackerTest" member="GetStationInfo_ForValidStationId_ReturnsStationTimeTable" />
+                          <codeLocation path="c:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\BusTrackerTest.cs" line="14" />
+                          <metadata>
+                            <entry key="TestKind">
+                              <value>Test</value>
+                            </entry>
+                          </metadata>
+                          <children />
+                          <parameters />
+                        </test>
+                      </children>
+                      <parameters />
+                    </test>
+                  </children>
+                  <parameters />
+                </test>
+              </children>
+              <parameters />
+            </test>
+          </children>
+          <parameters />
+        </test>
+        <test id="a66f78723596df21" name="SkanetrafikenServiceAgent.Test" fullName="SkanetrafikenServiceAgent.Test" isTestCase="false">
+          <codeReference assembly="SkanetrafikenServiceAgent.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+          <codeLocation path="C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\SkanetrafikenServiceAgent.Test.dll" />
+          <metadata>
+            <entry key="TestKind">
+              <value>NUnit v2.5.6+ Assembly</value>
+            </entry>
+            <entry key="CodeBase">
+              <value>C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\SkanetrafikenServiceAgent.Test.dll</value>
+            </entry>
+            <entry key="Copyright">
+              <value>Copyright ©  2014</value>
+            </entry>
+            <entry key="FileVersion">
+              <value>1.0.0.0</value>
+            </entry>
+            <entry key="Product">
+              <value>SkanetrafikenServiceAgent.Test</value>
+            </entry>
+            <entry key="Title">
+              <value>SkanetrafikenServiceAgent.Test</value>
+            </entry>
+            <entry key="Version">
+              <value>1.0.0.0</value>
+            </entry>
+            <entry key="Framework">
+              <value>NUnit v2.6.3.13283</value>
+            </entry>
+            <entry key="File">
+              <value>C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\SkanetrafikenServiceAgent.Test.dll</value>
+            </entry>
+          </metadata>
+          <children>
+            <test id="f845380ecc6b4eae" name="SkanetrafikenServiceAgent" fullName="SkanetrafikenServiceAgent.Test/SkanetrafikenServiceAgent" isTestCase="false">
+              <codeReference assembly="SkanetrafikenServiceAgent.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+              <codeLocation path="C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\SkanetrafikenServiceAgent.Test.dll" />
+              <metadata>
+                <entry key="TestKind">
+                  <value>Namespace</value>
+                </entry>
+              </metadata>
+              <children>
+                <test id="815266b1b8bb77c5" name="Test" fullName="SkanetrafikenServiceAgent.Test/SkanetrafikenServiceAgent/Test" isTestCase="false">
+                  <codeReference assembly="SkanetrafikenServiceAgent.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                  <codeLocation path="C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\SkanetrafikenServiceAgent.Test.dll" />
+                  <metadata>
+                    <entry key="TestKind">
+                      <value>Namespace</value>
+                    </entry>
+                  </metadata>
+                  <children>
+                    <test id="779f01b85097d267" name="SkanetrafikenServiceAgentTest" fullName="SkanetrafikenServiceAgent.Test/SkanetrafikenServiceAgent/Test/SkanetrafikenServiceAgentTest" isTestCase="false">
+                      <codeReference assembly="SkanetrafikenServiceAgent.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" namespace="SkanetrafikenServiceAgent.Test" type="SkanetrafikenServiceAgent.Test.SkanetrafikenServiceAgentTest" />
+                      <codeLocation path="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\SkanetrafikenServiceAgentTest.cs" />
+                      <metadata>
+                        <entry key="TestKind">
+                          <value>Fixture</value>
+                        </entry>
+                      </metadata>
+                      <children>
+                        <test id="20ad7e6c214c8d26" name="ParseProxyResult_GivenADeviationInProxyAnswer_DeviationIsParsed" fullName="SkanetrafikenServiceAgent.Test/SkanetrafikenServiceAgent/Test/SkanetrafikenServiceAgentTest/ParseProxyResult_GivenADeviationInProxyAnswer_DeviationIsParsed" isTestCase="true">
+                          <codeReference assembly="SkanetrafikenServiceAgent.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" namespace="SkanetrafikenServiceAgent.Test" type="SkanetrafikenServiceAgent.Test.SkanetrafikenServiceAgentTest" member="ParseProxyResult_GivenADeviationInProxyAnswer_DeviationIsParsed" />
+                          <codeLocation path="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\SkanetrafikenServiceAgentTest.cs" line="81" />
+                          <metadata>
+                            <entry key="TestKind">
+                              <value>Test</value>
+                            </entry>
+                          </metadata>
+                          <children />
+                          <parameters />
+                        </test>
+                        <test id="9cff678df2cf4cb" name="ParseProxyResult_GivenAJourneyTimeWithoutDeviationInProxyAnswer_JourneyTimeIsParsed" fullName="SkanetrafikenServiceAgent.Test/SkanetrafikenServiceAgent/Test/SkanetrafikenServiceAgentTest/ParseProxyResult_GivenAJourneyTimeWithoutDeviationInProxyAnswer_JourneyTimeIsParsed" isTestCase="true">
+                          <codeReference assembly="SkanetrafikenServiceAgent.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" namespace="SkanetrafikenServiceAgent.Test" type="SkanetrafikenServiceAgent.Test.SkanetrafikenServiceAgentTest" member="ParseProxyResult_GivenAJourneyTimeWithoutDeviationInProxyAnswer_JourneyTimeIsParsed" />
+                          <codeLocation path="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\SkanetrafikenServiceAgentTest.cs" line="61" />
+                          <metadata>
+                            <entry key="TestKind">
+                              <value>Test</value>
+                            </entry>
+                          </metadata>
+                          <children />
+                          <parameters />
+                        </test>
+                        <test id="d6c9dc3ae8c534f4" name="ParseProxyResult_GivenAServiceIdInProxyAnswer_ServiceIdIsParsed" fullName="SkanetrafikenServiceAgent.Test/SkanetrafikenServiceAgent/Test/SkanetrafikenServiceAgentTest/ParseProxyResult_GivenAServiceIdInProxyAnswer_ServiceIdIsParsed" isTestCase="true">
+                          <codeReference assembly="SkanetrafikenServiceAgent.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" namespace="SkanetrafikenServiceAgent.Test" type="SkanetrafikenServiceAgent.Test.SkanetrafikenServiceAgentTest" member="ParseProxyResult_GivenAServiceIdInProxyAnswer_ServiceIdIsParsed" />
+                          <codeLocation path="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\SkanetrafikenServiceAgentTest.cs" line="41" />
+                          <metadata>
+                            <entry key="TestKind">
+                              <value>Test</value>
+                            </entry>
+                          </metadata>
+                          <children />
+                          <parameters />
+                        </test>
+                      </children>
+                      <parameters />
+                    </test>
+                  </children>
+                  <parameters />
+                </test>
+              </children>
+              <parameters />
+            </test>
+          </children>
+          <parameters />
+        </test>
+      </children>
+      <parameters />
+    </test>
+    <annotations />
+  </testModel>
+  <testPackageRun startTime="2014-01-30T01:49:15.0611275+01:00" endTime="2014-01-30T01:49:20.9898745+01:00">
+    <testStepRun startTime="2014-01-30T01:49:17.5154366+01:00" endTime="2014-01-30T01:49:20.9908745+01:00">
+      <testStep id="9b2e69e8d511a388" name="Root" fullName="" testId="c2722843734a7a54" isPrimary="true" isTestCase="false" isDynamic="false">
+        <codeReference />
+        <codeLocation />
+        <metadata>
+          <entry key="TestKind">
+            <value>Root</value>
+          </entry>
+        </metadata>
+      </testStep>
+      <children>
+        <testStepRun startTime="2014-01-30T01:49:17.5844453+01:00" endTime="2014-01-30T01:49:19.7897233+01:00">
+          <testStep id="552ff1a1f24f9900" name="BusTrackerDomain.Test" fullName="BusTrackerDomain.Test" testId="e99e4676da95d529" isPrimary="true" isTestCase="false" isDynamic="false">
+            <codeReference assembly="BusTrackerDomain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+            <codeLocation path="C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\BusTrackerDomain.Test.dll" />
+            <metadata>
+              <entry key="TestKind">
+                <value>NUnit v2.5.6+ Assembly</value>
+              </entry>
+              <entry key="CodeBase">
+                <value>C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\BusTrackerDomain.Test.dll</value>
+              </entry>
+              <entry key="Copyright">
+                <value>Copyright ©  2014</value>
+              </entry>
+              <entry key="FileVersion">
+                <value>1.0.0.0</value>
+              </entry>
+              <entry key="Product">
+                <value>BusTrackerDomain.Test</value>
+              </entry>
+              <entry key="Title">
+                <value>BusTrackerDomain.Test</value>
+              </entry>
+              <entry key="Version">
+                <value>1.0.0.0</value>
+              </entry>
+              <entry key="Framework">
+                <value>NUnit v2.6.3.13283</value>
+              </entry>
+              <entry key="File">
+                <value>C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\BusTrackerDomain.Test.dll</value>
+              </entry>
+            </metadata>
+          </testStep>
+          <children>
+            <testStepRun startTime="2014-01-30T01:49:17.5854458+01:00" endTime="2014-01-30T01:49:19.7897233+01:00">
+              <testStep id="98af5cd5d3da650b" name="BusTrackerDomain" fullName="BusTrackerDomain.Test/BusTrackerDomain" testId="55a6ae20daebffb2" isPrimary="true" isTestCase="false" isDynamic="false">
+                <codeReference assembly="BusTrackerDomain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                <codeLocation path="C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\BusTrackerDomain.Test.dll" />
+                <metadata>
+                  <entry key="TestKind">
+                    <value>Namespace</value>
+                  </entry>
+                </metadata>
+              </testStep>
+              <children>
+                <testStepRun startTime="2014-01-30T01:49:17.5854458+01:00" endTime="2014-01-30T01:49:19.7897233+01:00">
+                  <testStep id="861cc3be62aadb97" name="Test" fullName="BusTrackerDomain.Test/BusTrackerDomain/Test" testId="1ba50ec3fadf5745" isPrimary="true" isTestCase="false" isDynamic="false">
+                    <codeReference assembly="BusTrackerDomain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                    <codeLocation path="C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\BusTrackerDomain.Test.dll" />
+                    <metadata>
+                      <entry key="TestKind">
+                        <value>Namespace</value>
+                      </entry>
+                    </metadata>
+                  </testStep>
+                  <children>
+                    <testStepRun startTime="2014-01-30T01:49:17.5854458+01:00" endTime="2014-01-30T01:49:19.7897233+01:00">
+                      <testStep id="ae0fc4f7cb0fff92" name="BusTrackerTest" fullName="BusTrackerDomain.Test/BusTrackerDomain/Test/BusTrackerTest" testId="f27aca9c255d43be" isPrimary="true" isTestCase="false" isDynamic="false">
+                        <codeReference assembly="BusTrackerDomain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" namespace="BusTrackerDomain.Test" type="BusTrackerDomain.Test.BusTrackerTest" />
+                        <codeLocation path="c:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\BusTrackerTest.cs" />
+                        <metadata>
+                          <entry key="TestKind">
+                            <value>Fixture</value>
+                          </entry>
+                        </metadata>
+                      </testStep>
+                      <children>
+                        <testStepRun startTime="2014-01-30T01:49:17.5914465+01:00" endTime="2014-01-30T01:49:19.7647205+01:00">
+                          <testStep id="a236018542db192d" name="GetStationInfo_ForValidStationId_ReturnsStationTimeTable" fullName="BusTrackerDomain.Test/BusTrackerDomain/Test/BusTrackerTest/GetStationInfo_ForValidStationId_ReturnsStationTimeTable" testId="5627b86bac45bf6f" isPrimary="true" isTestCase="true" isDynamic="false">
+                            <codeReference assembly="BusTrackerDomain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" namespace="BusTrackerDomain.Test" type="BusTrackerDomain.Test.BusTrackerTest" member="GetStationInfo_ForValidStationId_ReturnsStationTimeTable" />
+                            <codeLocation path="c:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\BusTrackerTest.cs" line="14" />
+                            <metadata>
+                              <entry key="TestKind">
+                                <value>Test</value>
+                              </entry>
+                            </metadata>
+                          </testStep>
+                          <children />
+                          <result assertCount="1" duration="2.1656641">
+                            <outcome status="passed" />
+                          </result>
+                          <testLog>
+                            <streams />
+                            <attachments />
+                          </testLog>
+                        </testStepRun>
+                      </children>
+                      <result assertCount="1" duration="2.178426">
+                        <outcome status="passed" />
+                      </result>
+                      <testLog>
+                        <streams />
+                        <attachments />
+                      </testLog>
+                    </testStepRun>
+                  </children>
+                  <result assertCount="1" duration="2.1806823">
+                    <outcome status="passed" />
+                  </result>
+                  <testLog>
+                    <streams />
+                    <attachments />
+                  </testLog>
+                </testStepRun>
+              </children>
+              <result assertCount="1" duration="2.1808636999999997">
+                <outcome status="passed" />
+              </result>
+              <testLog>
+                <streams />
+                <attachments />
+              </testLog>
+            </testStepRun>
+          </children>
+          <result assertCount="1" duration="2.1813303">
+            <outcome status="passed" />
+          </result>
+          <testLog>
+            <streams />
+            <attachments />
+          </testLog>
+        </testStepRun>
+        <testStepRun startTime="2014-01-30T01:49:19.8277281+01:00" endTime="2014-01-30T01:49:20.9878748+01:00">
+          <testStep id="4b899ccc1285ad54" name="SkanetrafikenServiceAgent.Test" fullName="SkanetrafikenServiceAgent.Test" testId="a66f78723596df21" isPrimary="true" isTestCase="false" isDynamic="false">
+            <codeReference assembly="SkanetrafikenServiceAgent.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+            <codeLocation path="C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\SkanetrafikenServiceAgent.Test.dll" />
+            <metadata>
+              <entry key="TestKind">
+                <value>NUnit v2.5.6+ Assembly</value>
+              </entry>
+              <entry key="CodeBase">
+                <value>C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\SkanetrafikenServiceAgent.Test.dll</value>
+              </entry>
+              <entry key="Copyright">
+                <value>Copyright ©  2014</value>
+              </entry>
+              <entry key="FileVersion">
+                <value>1.0.0.0</value>
+              </entry>
+              <entry key="Product">
+                <value>SkanetrafikenServiceAgent.Test</value>
+              </entry>
+              <entry key="Title">
+                <value>SkanetrafikenServiceAgent.Test</value>
+              </entry>
+              <entry key="Version">
+                <value>1.0.0.0</value>
+              </entry>
+              <entry key="Framework">
+                <value>NUnit v2.6.3.13283</value>
+              </entry>
+              <entry key="File">
+                <value>C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\SkanetrafikenServiceAgent.Test.dll</value>
+              </entry>
+            </metadata>
+          </testStep>
+          <children>
+            <testStepRun startTime="2014-01-30T01:49:19.8277281+01:00" endTime="2014-01-30T01:49:20.9878748+01:00">
+              <testStep id="d7fb603196ccde63" name="SkanetrafikenServiceAgent" fullName="SkanetrafikenServiceAgent.Test/SkanetrafikenServiceAgent" testId="f845380ecc6b4eae" isPrimary="true" isTestCase="false" isDynamic="false">
+                <codeReference assembly="SkanetrafikenServiceAgent.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                <codeLocation path="C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\SkanetrafikenServiceAgent.Test.dll" />
+                <metadata>
+                  <entry key="TestKind">
+                    <value>Namespace</value>
+                  </entry>
+                </metadata>
+              </testStep>
+              <children>
+                <testStepRun startTime="2014-01-30T01:49:19.828729+01:00" endTime="2014-01-30T01:49:20.9878748+01:00">
+                  <testStep id="d08393d90d62bff3" name="Test" fullName="SkanetrafikenServiceAgent.Test/SkanetrafikenServiceAgent/Test" testId="815266b1b8bb77c5" isPrimary="true" isTestCase="false" isDynamic="false">
+                    <codeReference assembly="SkanetrafikenServiceAgent.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+                    <codeLocation path="C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\SkanetrafikenServiceAgent.Test.dll" />
+                    <metadata>
+                      <entry key="TestKind">
+                        <value>Namespace</value>
+                      </entry>
+                    </metadata>
+                  </testStep>
+                  <children>
+                    <testStepRun startTime="2014-01-30T01:49:19.828729+01:00" endTime="2014-01-30T01:49:20.9878748+01:00">
+                      <testStep id="4560d9772efc0578" name="SkanetrafikenServiceAgentTest" fullName="SkanetrafikenServiceAgent.Test/SkanetrafikenServiceAgent/Test/SkanetrafikenServiceAgentTest" testId="779f01b85097d267" isPrimary="true" isTestCase="false" isDynamic="false">
+                        <codeReference assembly="SkanetrafikenServiceAgent.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" namespace="SkanetrafikenServiceAgent.Test" type="SkanetrafikenServiceAgent.Test.SkanetrafikenServiceAgentTest" />
+                        <codeLocation path="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\SkanetrafikenServiceAgentTest.cs" />
+                        <metadata>
+                          <entry key="TestKind">
+                            <value>Fixture</value>
+                          </entry>
+                        </metadata>
+                      </testStep>
+                      <children>
+                        <testStepRun startTime="2014-01-30T01:49:19.829729+01:00" endTime="2014-01-30T01:49:20.8928619+01:00">
+                          <testStep id="75e3b46b4c7f7e92" name="ParseProxyResult_GivenADeviationInProxyAnswer_DeviationIsParsed" fullName="SkanetrafikenServiceAgent.Test/SkanetrafikenServiceAgent/Test/SkanetrafikenServiceAgentTest/ParseProxyResult_GivenADeviationInProxyAnswer_DeviationIsParsed" testId="20ad7e6c214c8d26" isPrimary="true" isTestCase="true" isDynamic="false">
+                            <codeReference assembly="SkanetrafikenServiceAgent.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" namespace="SkanetrafikenServiceAgent.Test" type="SkanetrafikenServiceAgent.Test.SkanetrafikenServiceAgentTest" member="ParseProxyResult_GivenADeviationInProxyAnswer_DeviationIsParsed" />
+                            <codeLocation path="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\SkanetrafikenServiceAgentTest.cs" line="81" />
+                            <metadata>
+                              <entry key="TestKind">
+                                <value>Test</value>
+                              </entry>
+                            </metadata>
+                          </testStep>
+                          <children />
+                          <result assertCount="1" duration="1.0637098999999999">
+                            <outcome status="passed" />
+                          </result>
+                          <testLog>
+                            <streams />
+                            <attachments />
+                          </testLog>
+                        </testStepRun>
+                        <testStepRun startTime="2014-01-30T01:49:20.893862+01:00" endTime="2014-01-30T01:49:20.9828737+01:00">
+                          <testStep id="2b2f2581d912dc5e" name="ParseProxyResult_GivenAJourneyTimeWithoutDeviationInProxyAnswer_JourneyTimeIsParsed" fullName="SkanetrafikenServiceAgent.Test/SkanetrafikenServiceAgent/Test/SkanetrafikenServiceAgentTest/ParseProxyResult_GivenAJourneyTimeWithoutDeviationInProxyAnswer_JourneyTimeIsParsed" testId="9cff678df2cf4cb" isPrimary="true" isTestCase="true" isDynamic="false">
+                            <codeReference assembly="SkanetrafikenServiceAgent.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" namespace="SkanetrafikenServiceAgent.Test" type="SkanetrafikenServiceAgent.Test.SkanetrafikenServiceAgentTest" member="ParseProxyResult_GivenAJourneyTimeWithoutDeviationInProxyAnswer_JourneyTimeIsParsed" />
+                            <codeLocation path="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\SkanetrafikenServiceAgentTest.cs" line="61" />
+                            <metadata>
+                              <entry key="TestKind">
+                                <value>Test</value>
+                              </entry>
+                            </metadata>
+                          </testStep>
+                          <children />
+                          <result assertCount="1" duration="0.089420199999999991">
+                            <outcome status="passed" />
+                          </result>
+                          <testLog>
+                            <streams />
+                            <attachments />
+                          </testLog>
+                        </testStepRun>
+                        <testStepRun startTime="2014-01-30T01:49:20.9828737+01:00" endTime="2014-01-30T01:49:20.9878748+01:00">
+                          <testStep id="71af6695bfdc26d4" name="ParseProxyResult_GivenAServiceIdInProxyAnswer_ServiceIdIsParsed" fullName="SkanetrafikenServiceAgent.Test/SkanetrafikenServiceAgent/Test/SkanetrafikenServiceAgentTest/ParseProxyResult_GivenAServiceIdInProxyAnswer_ServiceIdIsParsed" testId="d6c9dc3ae8c534f4" isPrimary="true" isTestCase="true" isDynamic="false">
+                            <codeReference assembly="SkanetrafikenServiceAgent.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" namespace="SkanetrafikenServiceAgent.Test" type="SkanetrafikenServiceAgent.Test.SkanetrafikenServiceAgentTest" member="ParseProxyResult_GivenAServiceIdInProxyAnswer_ServiceIdIsParsed" />
+                            <codeLocation path="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\SkanetrafikenServiceAgentTest.cs" line="41" />
+                            <metadata>
+                              <entry key="TestKind">
+                                <value>Test</value>
+                              </entry>
+                            </metadata>
+                          </testStep>
+                          <children />
+                          <result assertCount="1" duration="0.0054120999999999996">
+                            <outcome status="passed" />
+                          </result>
+                          <testLog>
+                            <streams />
+                            <attachments />
+                          </testLog>
+                        </testStepRun>
+                      </children>
+                      <result assertCount="3" duration="1.1592596">
+                        <outcome status="passed" />
+                      </result>
+                      <testLog>
+                        <streams />
+                        <attachments />
+                      </testLog>
+                    </testStepRun>
+                  </children>
+                  <result assertCount="3" duration="1.1595748">
+                    <outcome status="passed" />
+                  </result>
+                  <testLog>
+                    <streams />
+                    <attachments />
+                  </testLog>
+                </testStepRun>
+              </children>
+              <result assertCount="3" duration="1.159716">
+                <outcome status="passed" />
+              </result>
+              <testLog>
+                <streams />
+                <attachments />
+              </testLog>
+            </testStepRun>
+          </children>
+          <result assertCount="3" duration="1.1601356">
+            <outcome status="passed" />
+          </result>
+          <testLog>
+            <streams />
+            <attachments />
+          </testLog>
+        </testStepRun>
+      </children>
+      <result assertCount="4" duration="5.9227539">
+        <outcome status="passed" />
+      </result>
+      <testLog>
+        <streams />
+        <attachments />
+      </testLog>
+    </testStepRun>
+    <statistics assertCount="4" duration="5.9462776" runCount="4" passedCount="4" failedCount="0" inconclusiveCount="0" skippedCount="0" testCount="4" stepCount="13">
+      <outcomeSummaries>
+        <outcomeSummary count="4">
+          <outcome status="passed" />
+        </outcomeSummary>
+      </outcomeSummaries>
+    </statistics>
+  </testPackageRun>
+  <logEntries />
+</report>

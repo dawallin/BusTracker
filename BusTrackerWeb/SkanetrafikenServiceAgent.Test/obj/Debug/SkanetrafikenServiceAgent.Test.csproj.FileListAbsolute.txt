@@ -9,3 +9,8 @@ C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\NSubst
 C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\obj\Debug\SkanetrafikenServiceAgent.Test.csprojResolveAssemblyReference.cache
 C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\obj\Debug\SkanetrafikenServiceAgent.Test.dll
 C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\obj\Debug\SkanetrafikenServiceAgent.Test.pdb
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\nunit.framework.dll
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\nunit.framework.xml
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\HtmlAgilityPack.dll
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\HtmlAgilityPack.pdb
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\HtmlAgilityPack.xml

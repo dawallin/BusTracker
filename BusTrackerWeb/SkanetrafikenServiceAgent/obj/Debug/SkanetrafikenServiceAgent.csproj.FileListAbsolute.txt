@@ -5,3 +5,6 @@ C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\bin\Debug\BusTrackerD
 C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\obj\Debug\SkanetrafikenServiceAgent.csprojResolveAssemblyReference.cache
 C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\obj\Debug\SkanetrafikenServiceAgent.dll
 C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\obj\Debug\SkanetrafikenServiceAgent.pdb
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\bin\Debug\HtmlAgilityPack.dll
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\bin\Debug\HtmlAgilityPack.pdb
+C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\bin\Debug\HtmlAgilityPack.xml

@@ -21,5 +21,15 @@ namespace BusTrackerDomain
         {
             return serviceAgent.GetStationInfo(stationId);
         }
+
+        public ServiceRoute GetServiceRoute(int serviceId)
+        {
+            return serviceAgent.GetServiceRoute(serviceId);
+        }
+
+        public IEnumerable<Service> GetServices()
+        {
+            return serviceAgent.GetServices();
+        }
     }
 }

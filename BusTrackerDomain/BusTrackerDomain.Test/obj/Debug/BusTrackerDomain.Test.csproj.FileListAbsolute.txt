@@ -7,3 +7,5 @@ C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\BusTrackerDo
 C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\NSubstitute.dll
 C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\BusTrackerDomain.pdb
 C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\NSubstitute.xml
+C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\nunit.framework.dll
+C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\nunit.framework.xml
