@@ -2,12 +2,8 @@
 
 namespace BusTrackerDomain.Entity
 {
-    public class DepartureInfo
+    public class Departure
     {
-        public Service Service { get; set; }
-
-        public Station Station { get; set; }
-
         public int RouteId { get; set; }
         public int Direction { get; set; }
 

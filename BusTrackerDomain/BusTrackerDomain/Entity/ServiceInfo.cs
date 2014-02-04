@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace BusTrackerDomain.Entity
 {
-    public class ServiceRoute
+    public class ServiceInfo
     {
         public Service Service { get; set; }
 
-        public List<Station> Stations { get; set; } 
+        public List<ServiceStationInfo> ServiceStationInfo { get; set; }
     }
 }

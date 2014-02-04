@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<gendarme-output date="30/01/2014 00:49:42">
+<gendarme-output date="03/02/2014 00:52:06">
   <files>
     <file Name="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\bin\Debug\SkanetrafikenServiceAgent.dll</file>
   </files>
@@ -195,50 +195,60 @@
       <problem>One or more generic type parameters are not used in the formal parameter list.</problem>
       <solution>This prevents the compiler from inferring types when the method is used which results in hard to use API definitions.</solution>
       <target Name="T BusTrackerWeb.SkanetrafikenServiceAgent.ServiceAgent::ApiQuery(System.String)" Assembly="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <defect Severity="Low" Confidence="High" Location="T BusTrackerWeb.SkanetrafikenServiceAgent.ServiceAgent::ApiQuery(System.String)" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\ServiceAgent.cs(≈35)">Generic parameter 'T' is not used by the method parameters.</defect>
+        <defect Severity="Low" Confidence="High" Location="T BusTrackerWeb.SkanetrafikenServiceAgent.ServiceAgent::ApiQuery(System.String)" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\ServiceAgent.cs(≈45)">Generic parameter 'T' is not used by the method parameters.</defect>
       </target>
       <target Name="T BusTrackerWeb.SkanetrafikenServiceAgent.ServiceAgent::FromXmlString(System.String)" Assembly="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <defect Severity="Low" Confidence="High" Location="T BusTrackerWeb.SkanetrafikenServiceAgent.ServiceAgent::FromXmlString(System.String)" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\ServiceAgent.cs(≈50)">Generic parameter 'T' is not used by the method parameters.</defect>
+        <defect Severity="Low" Confidence="High" Location="T BusTrackerWeb.SkanetrafikenServiceAgent.ServiceAgent::FromXmlString(System.String)" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\ServiceAgent.cs(≈60)">Generic parameter 'T' is not used by the method parameters.</defect>
       </target>
     </rule>
     <rule Name="AvoidReturningArraysOnPropertiesRule" Uri="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidReturningArraysOnPropertiesRule(2.10)">
       <problem>By convention properties should not return arrays.</problem>
       <solution>Return a read-only collection or replace the property by a method and return a copy of the array.</solution>
       <target Name="System.Xml.XmlElement[] BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult/Line::get_DeviationsNodes()" Assembly="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <defect Severity="Medium" Confidence="Total" Location="System.Xml.XmlElement[] BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult/Line::get_DeviationsNodes()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\Entity\GetDepartureArrivalResult.cs(≈25)"></defect>
+        <defect Severity="Medium" Confidence="Total" Location="System.Xml.XmlElement[] BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult/Line::get_DeviationsNodes()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\Entity\GetDepartureArrivalResult.cs(≈27)"></defect>
       </target>
     </rule>
     <rule Name="AvoidSmallNamespaceRule" Uri="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Design.AvoidSmallNamespaceRule(2.10)">
       <problem>This namespaces contains very few visible types.</problem>
       <solution>Consider merging this namespace with its parent or a sibling.</solution>
-      <target Name="" Assembly="[across all assemblies analyzed]">
-        <defect Severity="Low" Confidence="Total" Location="" Source="">Only 3 visible types are defined inside this namespace.</defect>
-      </target>
-      <target Name="BusTrackerWeb.SkanetrafikenServiceAgent" Assembly="[across all assemblies analyzed]">
-        <defect Severity="Low" Confidence="Total" Location="BusTrackerWeb.SkanetrafikenServiceAgent" Source="">Only 2 visible types are defined inside this namespace.</defect>
-      </target>
       <target Name="BusTrackerWeb.SkanetrafikenServiceAgent.Interface" Assembly="[across all assemblies analyzed]">
         <defect Severity="Low" Confidence="Total" Location="BusTrackerWeb.SkanetrafikenServiceAgent.Interface" Source="">Only 1 visible types are defined inside this namespace.</defect>
       </target>
       <target Name="BusTrackerWeb.SkanetrafikenServiceAgent.Entity" Assembly="[across all assemblies analyzed]">
-        <defect Severity="Low" Confidence="Total" Location="BusTrackerWeb.SkanetrafikenServiceAgent.Entity" Source="">Only 1 visible types are defined inside this namespace.</defect>
+        <defect Severity="Low" Confidence="Total" Location="BusTrackerWeb.SkanetrafikenServiceAgent.Entity" Source="">Only 2 visible types are defined inside this namespace.</defect>
+      </target>
+      <target Name="BusTrackerWeb.SkanetrafikenServiceAgent" Assembly="[across all assemblies analyzed]">
+        <defect Severity="Low" Confidence="Total" Location="BusTrackerWeb.SkanetrafikenServiceAgent" Source="">Only 3 visible types are defined inside this namespace.</defect>
       </target>
     </rule>
     <rule Name="AvoidVisibleFieldsRule" Uri="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Design.AvoidVisibleFieldsRule(2.10)">
       <problem>This type contains visible instance fields. A field should be an implementation detail and encapsulated within a property or method.</problem>
       <solution>Use a property or method instead.</solution>
-      <target Name="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult" Assembly="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <defect Severity="Medium" Confidence="Total" Location="System.Collections.Generic.List`1&lt;BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult/Line&gt; BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult::Lines" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\Entity\GetDepartureArrivalResult.cs(≈unavailable)">Field 'Lines' should be private or internal and its value accessed through a property.</defect>
+      <target Name="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetJourneyResult" Assembly="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <defect Severity="Medium" Confidence="Total" Location="System.Collections.Generic.List`1&lt;BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetJourneyResult/Journey&gt; BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetJourneyResult::Journeys" Source="">Field 'Journeys' should be private or internal and its value accessed through a property.</defect>
       </target>
-      <target Name="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult/Line" Assembly="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <defect Severity="Medium" Confidence="Total" Location="System.Int32 BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult/Line::RunNo" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\Entity\GetDepartureArrivalResult.cs(≈25)">Field 'RunNo' should be private or internal and its value accessed through a property.</defect>
+      <target Name="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetJourneyResult/Journey" Assembly="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <defect Severity="Medium" Confidence="Total" Location="System.Int32 BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetJourneyResult/Journey::NoOfChanges" Source="">Field 'NoOfChanges' should be private or internal and its value accessed through a property.</defect>
+        <defect Severity="Medium" Confidence="Total" Location="System.Collections.Generic.List`1&lt;BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetJourneyResult/Journey/RouteLink&gt; BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetJourneyResult/Journey::RouteLinks" Source="">Field 'RouteLinks' should be private or internal and its value accessed through a property.</defect>
+      </target>
+      <target Name="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetJourneyResult/Journey/RouteLink" Assembly="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <defect Severity="Medium" Confidence="Total" Location="System.String BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetJourneyResult/Journey/RouteLink::RouteLinkKey" Source="">Field 'RouteLinkKey' should be private or internal and its value accessed through a property.</defect>
       </target>
     </rule>
     <rule Name="AvoidVisibleNestedTypesRule" Uri="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Design.AvoidVisibleNestedTypesRule(2.10)">
       <problem>This type is both nested and visible outside the assembly. Nested types are often confused with namespaces.</problem>
       <solution>Change the nested type to be invisible outside the assembly or un-nest it.</solution>
+      <target Name="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetJourneyResult/Journey" Assembly="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <defect Severity="Medium" Confidence="Total" Location="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetJourneyResult/Journey" Source=""></defect>
+      </target>
+      <target Name="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetJourneyResult/Journey/RouteLink" Assembly="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <defect Severity="Medium" Confidence="Total" Location="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetJourneyResult/Journey/RouteLink" Source=""></defect>
+      </target>
+      <target Name="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetJourneyResult/Journey/LineInfo" Assembly="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <defect Severity="Medium" Confidence="Total" Location="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetJourneyResult/Journey/LineInfo" Source=""></defect>
+      </target>
       <target Name="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult/Line" Assembly="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <defect Severity="Medium" Confidence="Total" Location="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult/Line" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\Entity\GetDepartureArrivalResult.cs(≈25)"></defect>
+        <defect Severity="Medium" Confidence="Total" Location="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult/Line" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\Entity\GetDepartureArrivalResult.cs(≈27)"></defect>
       </target>
       <target Name="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult/RealTime" Assembly="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
         <defect Severity="Medium" Confidence="Total" Location="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult/RealTime" Source=""></defect>
@@ -246,12 +256,25 @@
       <target Name="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult/RealTimeInfo" Assembly="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
         <defect Severity="Medium" Confidence="Total" Location="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult/RealTimeInfo" Source=""></defect>
       </target>
+      <target Name="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult/StopAreaDataObject" Assembly="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <defect Severity="Medium" Confidence="Total" Location="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult/StopAreaDataObject" Source=""></defect>
+      </target>
     </rule>
     <rule Name="CompareWithEmptyStringEfficientlyRule" Uri="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.CompareWithEmptyStringEfficientlyRule(2.10)">
       <problem>This method compares a string with an empty string by using the Equals method or the equality (==) or inequality (!=) operators.</problem>
       <solution>Compare String.Length with 0 instead. The string length is known and it's faster to compare integers than to compare strings.</solution>
       <target Name="System.String BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult/Line::get_Deviations()" Assembly="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <defect Severity="Medium" Confidence="High" Location="System.String BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult/Line::get_Deviations()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\Entity\GetDepartureArrivalResult.cs(≈47)"></defect>
+        <defect Severity="Medium" Confidence="High" Location="System.String BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult/Line::get_Deviations()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\Entity\GetDepartureArrivalResult.cs(≈49)"></defect>
+      </target>
+    </rule>
+    <rule Name="ConsiderConvertingMethodToPropertyRule" Uri="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Design.ConsiderConvertingMethodToPropertyRule(2.10)">
+      <problem>This method looks like a candidate to be a property.</problem>
+      <solution>Either make the method a property or ignore the defect.</solution>
+      <target Name="System.Collections.Generic.List`1&lt;BusTrackerDomain.Entity.Service&gt; BusTrackerWeb.SkanetrafikenServiceAgent.ServiceAgent::GetServices()" Assembly="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <defect Severity="Low" Confidence="Normal" Location="System.Collections.Generic.List`1&lt;BusTrackerDomain.Entity.Service&gt; BusTrackerWeb.SkanetrafikenServiceAgent.ServiceAgent::GetServices()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\ServiceAgent.cs(≈82)"></defect>
+      </target>
+      <target Name="System.Collections.Generic.List`1&lt;BusTrackerDomain.Entity.Service&gt; BusTrackerWeb.SkanetrafikenServiceAgent.ServiceFinder::GetServices()" Assembly="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <defect Severity="Low" Confidence="Normal" Location="System.Collections.Generic.List`1&lt;BusTrackerDomain.Entity.Service&gt; BusTrackerWeb.SkanetrafikenServiceAgent.ServiceFinder::GetServices()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\ServiceFinder.cs(≈19)"></defect>
       </target>
     </rule>
     <rule Name="MarkAssemblyWithCLSCompliantRule" Uri="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Design.MarkAssemblyWithCLSCompliantRule(2.10)">
@@ -259,6 +282,13 @@
       <solution>Add this attribute to ease the use (or non-use) of your assembly by CLS consumers.</solution>
       <target Name="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Assembly="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
         <defect Severity="High" Confidence="Total" Location="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Source=""></defect>
+      </target>
+    </rule>
+    <rule Name="MethodCanBeMadeStaticRule" Uri="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Correctness.MethodCanBeMadeStaticRule(2.10)">
+      <problem>This method does not use any instance fields, properties or methods and can be made static.</problem>
+      <solution>Make the method static.</solution>
+      <target Name="BusTrackerDomain.Entity.ServiceRoute BusTrackerWeb.SkanetrafikenServiceAgent.GetLineResult::ToServiceRoute(System.String)" Assembly="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <defect Severity="Low" Confidence="Total" Location="BusTrackerDomain.Entity.ServiceRoute BusTrackerWeb.SkanetrafikenServiceAgent.GetLineResult::ToServiceRoute(System.String)" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\Entity\GetLineResult.cs(≈14)"></defect>
       </target>
     </rule>
   </results>

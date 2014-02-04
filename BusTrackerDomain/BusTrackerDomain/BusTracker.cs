@@ -17,19 +17,19 @@ namespace BusTrackerDomain
             this.serviceAgent = serviceAgent;
         }
 
-        public IEnumerable<DepartureInfo> GetStationInfo(int stationId)
+        public StationInfo GetStationInfo(int stationId)
         {
             return serviceAgent.GetStationInfo(stationId);
-        }
-
-        public ServiceRoute GetServiceRoute(int serviceId)
-        {
-            return serviceAgent.GetServiceRoute(serviceId);
         }
 
         public IEnumerable<Service> GetServices()
         {
             return serviceAgent.GetServices();
+        }
+
+        public ServiceInfo GetServiceInfo(int serviceId)
+        {
+            return new ServiceInfoCalculator(this.serviceAgent).GetServiceInfo(serviceId);
         }
     }
 }

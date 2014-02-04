@@ -79,20 +79,36 @@ namespace BusTrackerWeb.SkanetrafikenServiceAgent.Entity
             public string Name { get; set; }
         }
 
-        public List<DepartureInfo> ToDepartureInfo(int station)
+        public StationInfo ToStationInfo(int station)
         {
-            string stationName = this.StopAreaData.Name;
+            var stationInfo = new StationInfo()
+                {
+                    Station = new Station
+                        {
+                            Id = station,
+                            Name = this.StopAreaData.Name,
+                        },
+                    StationServiceInfo = new List<StationServiceInfo>()
+                };
 
-            return this.Lines.Select(line => new DepartureInfo()
+            stationInfo.StationServiceInfo = this.Lines.Select(line => new StationServiceInfo()
             {
-                Delay = TimeSpan.FromMinutes(line.RealTime != null && line.RealTime.RealTimeInfo != null ? line.RealTime.RealTimeInfo.DepTimeDeviation : 0),
-                DepartureTime = line.JourneyDateTime,
-                Direction = line.RunNo % 2,
-                Note = (line.RealTime != null && line.RealTime.RealTimeInfo != null && line.RealTime.RealTimeInfo.DepDeviationAffect != null ? line.RealTime.RealTimeInfo.DepDeviationAffect : string.Empty) + ", " + line.Deviations,
-                RouteId = line.RunNo,
-                Service = new Service { ServiceId = line.No, ServiceName = line.Name },
-                Station = new Station { Id = station, Name = stationName }
+                Service = new Service
+                    {
+                        ServiceId = line.No,
+                        ServiceName = line.Name
+                    },
+                Departure = new Departure
+                    {
+                        RouteId = line.RunNo,
+                        Delay = TimeSpan.FromMinutes(line.RealTime != null && line.RealTime.RealTimeInfo != null ? line.RealTime.RealTimeInfo.DepTimeDeviation : 0),
+                        DepartureTime = line.JourneyDateTime,
+                        Direction = line.RunNo % 2,
+                        Note = (line.RealTime != null && line.RealTime.RealTimeInfo != null && line.RealTime.RealTimeInfo.DepDeviationAffect != null ? line.RealTime.RealTimeInfo.DepDeviationAffect : string.Empty) + ", " + line.Deviations,
+                    }
             }).ToList();
+            return stationInfo;
+
         }
     }
 }

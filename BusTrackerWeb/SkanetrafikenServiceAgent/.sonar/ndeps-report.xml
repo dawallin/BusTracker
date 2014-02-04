@@ -5,40 +5,82 @@
       <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
       <Reference name="BusTrackerDomain" fullName="BusTrackerDomain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" version="1.0.0.0" />
       <Reference name="System.Xml" fullName="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
-      <Reference name="System.Xml.Linq" fullName="System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
-      <Reference name="System.Core" fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="HtmlAgilityPack" fullName="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a" version="1.4.6.0" />
       <Reference name="System" fullName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Xml.Linq" fullName="System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
     </References>
     <TypeReferences>
+      <From fullname="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetJourneyResult">
+        <To fullname="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetJourneyResult/Journey/RouteLink" assemblyname="SkanetrafikenServiceAgent" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerWeb.SkanetrafikenServiceAgent.Interface.IProxyQueryResult" assemblyname="SkanetrafikenServiceAgent" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetJourneyResult/Journey" assemblyname="SkanetrafikenServiceAgent" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="BusTrackerWeb.SkanetrafikenServiceAgent.GetLineResult" path="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\Entity\GetLineResult.cs">
+        <To fullname="HtmlAgilityPack.HtmlNode" assemblyname="HtmlAgilityPack" assemblyversion="1.4.6.0" />
+        <To fullname="BusTrackerDomain.Entity.ServiceRoute" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="HtmlAgilityPack.HtmlDocument" assemblyname="HtmlAgilityPack" assemblyversion="1.4.6.0" />
+        <To fullname="HtmlAgilityPack.HtmlNodeCollection" assemblyname="HtmlAgilityPack" assemblyversion="1.4.6.0" />
+        <To fullname="BusTrackerDomain.Entity.Station" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+      </From>
       <From fullname="BusTrackerWeb.SkanetrafikenServiceAgent.ServiceAgent" path="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\ServiceAgent.cs">
         <To fullname="BusTrackerDomain.Interface.IServiceAgent" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
         <To fullname="BusTrackerWeb.SkanetrafikenServiceAgent.Interface.IServiceProxy" assemblyname="SkanetrafikenServiceAgent" assemblyversion="1.0.0.0" />
         <To fullname="BusTrackerDomain.Entity.DepartureInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
         <To fullname="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult" assemblyname="SkanetrafikenServiceAgent" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetJourneyResult" assemblyname="SkanetrafikenServiceAgent" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.ServiceRoute" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.Service" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
       </From>
       <From fullname="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult" path="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\Entity\GetDepartureArrivalResult.cs">
         <To fullname="BusTrackerWeb.SkanetrafikenServiceAgent.Interface.IProxyQueryResult" assemblyname="SkanetrafikenServiceAgent" assemblyversion="1.0.0.0" />
         <To fullname="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult/Line" assemblyname="SkanetrafikenServiceAgent" assemblyversion="1.0.0.0" />
         <To fullname="BusTrackerDomain.Entity.DepartureInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
       </From>
+      <From fullname="BusTrackerWeb.SkanetrafikenServiceAgent.ServiceFinder" path="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\ServiceFinder.cs">
+        <To fullname="BusTrackerDomain.Entity.Service" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+      </From>
       <From fullname="BusTrackerWeb.SkanetrafikenServiceAgent.WebCallProxy" path="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\WebCallProxy.cs">
         <To fullname="BusTrackerWeb.SkanetrafikenServiceAgent.Interface.IServiceProxy" assemblyname="SkanetrafikenServiceAgent" assemblyversion="1.0.0.0" />
       </From>
     </TypeReferences>
     <Design>
-      <type fullName="BusTrackerWeb.SkanetrafikenServiceAgent.ServiceAgent" source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\ServiceAgent.cs" rfc="22" dit="1">
+      <type fullName="BusTrackerWeb.SkanetrafikenServiceAgent.GetLineResult" source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\Entity\GetLineResult.cs" rfc="33" dit="1">
+        <block>
+          <element type="Method" name="BusTrackerDomain.Entity.ServiceRoute ToServiceRoute(System.String)" />
+        </block>
+      </type>
+      <type fullName="BusTrackerWeb.SkanetrafikenServiceAgent.ServiceAgent" source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\ServiceAgent.cs" rfc="35" dit="1">
         <block>
           <element type="Method" name="System.Collections.Generic.IEnumerable`1&lt;BusTrackerDomain.Entity.DepartureInfo&gt; GetStationInfo(System.Int32)" />
+        </block>
+        <block>
+          <element type="Method" name="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetJourneyResult GetJourneyResponse(System.Int32, System.Int32, System.DateTime)" />
         </block>
         <block>
           <element type="Field" name="serviceProxy" />
           <element type="Method" name="T ApiQuery(System.String)" />
         </block>
+        <block>
+          <element type="Method" name="BusTrackerDomain.Entity.ServiceRoute GetServiceRoute(System.Int32)" />
+        </block>
+        <block>
+          <element type="Method" name="System.Collections.Generic.List`1&lt;BusTrackerDomain.Entity.Service&gt; GetServices()" />
+        </block>
       </type>
       <type fullName="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult" source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\Entity\GetDepartureArrivalResult.cs" rfc="5" dit="1">
         <block>
-          <element type="Field" name="Lines" />
+          <element type="Field" name="Lines (property)" />
+          <element type="Field" name="StopAreaData (property)" />
           <element type="Method" name="System.Collections.Generic.List`1&lt;BusTrackerDomain.Entity.DepartureInfo&gt; ToDepartureInfo(System.Int32)" />
+        </block>
+      </type>
+      <type fullName="BusTrackerWeb.SkanetrafikenServiceAgent.ServiceFinder" source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\ServiceFinder.cs" rfc="16" dit="1">
+        <block>
+          <element type="Field" name="serviceData" />
+          <element type="Method" name="System.String GetRouteKey(System.Int32)" />
+          <element type="Method" name="BusTrackerDomain.Entity.Service GetRouteService(System.Int32)" />
+          <element type="Method" name="System.Collections.Generic.List`1&lt;BusTrackerDomain.Entity.Service&gt; GetServices()" />
         </block>
       </type>
       <type fullName="BusTrackerWeb.SkanetrafikenServiceAgent.WebCallProxy" source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\WebCallProxy.cs" rfc="5" dit="1">
@@ -48,12 +90,20 @@
       </type>
       <type fullName="&lt;Module&gt;" source="" rfc="0" dit="0" />
       <type fullName="BusTrackerWeb.SkanetrafikenServiceAgent.Interface.IProxyQueryResult" source="" rfc="0" dit="0" />
+      <type fullName="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetJourneyResult" source="" rfc="1" dit="1" />
       <type fullName="BusTrackerWeb.SkanetrafikenServiceAgent.Interface.IServiceProxy" source="" rfc="0" dit="0" />
     </Design>
   </Assembly>
   <Assembly name="BusTrackerDomain" version="1.0.0.0">
     <References>
       <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+    </References>
+  </Assembly>
+  <Assembly name="HtmlAgilityPack" version="1.4.6.0">
+    <References>
+      <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Xml" fullName="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System" fullName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
     </References>
   </Assembly>
 </Dependencies>

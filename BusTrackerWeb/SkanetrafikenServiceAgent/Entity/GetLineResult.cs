@@ -11,7 +11,7 @@ namespace BusTrackerWeb.SkanetrafikenServiceAgent
 {
     public class GetLineResult
     {
-        public ServiceRoute ToServiceRoute(string routeKey)
+        public ServiceRouteInfo ToServiceRoute(string routeKey)
         {
             string urlString = "http://www.reseplaneraren.skanetrafiken.se/lineResults.aspx?key=" + routeKey;
 
@@ -27,7 +27,7 @@ namespace BusTrackerWeb.SkanetrafikenServiceAgent
 
             var routeTable = doc.DocumentNode.SelectNodes("//*[@id=\"spot-results-table\"]").First().ChildNodes;
 
-            ServiceRoute serviceRoute = new ServiceRoute { Stations = new List<Station>()};
+            ServiceRouteInfo serviceRoute = new ServiceRouteInfo { Stations = new List<Station>()};
 
             foreach (var stationRow in routeTable.Where(c => c.Attributes.Contains("class") && c.Attributes["class"].Value.StartsWith("spot-row")))
             {

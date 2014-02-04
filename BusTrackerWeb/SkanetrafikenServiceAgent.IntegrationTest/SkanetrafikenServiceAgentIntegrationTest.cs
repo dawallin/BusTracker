@@ -11,10 +11,9 @@ namespace SkanetrafikenServiceAgent.IntegrationTest
     [TestFixture]
     public class SkanetrafikenServiceAgentIntegrationTest
     {
+        private static ServiceRouteInfo serviceRouteCached = null;
 
-        private static ServiceRoute serviceRouteCached = null;
-
-        private static ServiceRoute ServiceRouteResult
+        private static ServiceRouteInfo ServiceRouteResult
         {
             get
             {

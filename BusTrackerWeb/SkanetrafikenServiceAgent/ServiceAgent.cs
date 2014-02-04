@@ -23,13 +23,13 @@ namespace BusTrackerWeb.SkanetrafikenServiceAgent
             this.serviceProxy = serviceProxy;
         }
 
-        public IEnumerable<DepartureInfo> GetStationInfo(int station)
+        public StationInfo GetStationInfo(int station)
         {
             string urlString = "http://www.labs.skanetrafiken.se/v2.2/stationresults.asp?selPointFrKey=" + station;
 
             var result = ApiQuery<GetDepartureArrivalResult>(urlString);
 
-            return result.ToDepartureInfo(station);
+            return result.ToStationInfo(station);
         }
         
         public GetJourneyResult GetJourneyResponse(int from, int to, DateTime time)
@@ -69,7 +69,7 @@ namespace BusTrackerWeb.SkanetrafikenServiceAgent
             }
         }
 
-        public ServiceRoute GetServiceRoute(int serviceId)
+        public ServiceRouteInfo GetServiceRoute(int serviceId)
         {
             string serviceRouteKey = new ServiceFinder().GetRouteKey(serviceId);
             var serviceRoute = new GetLineResult().ToServiceRoute(serviceRouteKey);

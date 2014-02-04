@@ -58,7 +58,7 @@ namespace SkanetrafikenServiceAgent.Test
 
             var serviceAgent = new ServiceAgent(serviceProxy);
 
-            Assert.AreEqual(exampleNo, serviceAgent.GetStationInfo(exampleStationId).FirstOrDefault().Service.ServiceId);
+            Assert.AreEqual(exampleNo, serviceAgent.GetStationInfo(exampleStationId).StationServiceInfo.FirstOrDefault().Service.ServiceId);
         }
 
         [Test]
@@ -79,7 +79,7 @@ namespace SkanetrafikenServiceAgent.Test
 
             var serviceAgent = new ServiceAgent(serviceProxy);
 
-            Assert.AreEqual(exampleDateTime, serviceAgent.GetStationInfo(exampleStationId).FirstOrDefault().DepartureTime);
+            Assert.AreEqual(exampleDateTime, serviceAgent.GetStationInfo(exampleStationId).StationServiceInfo.FirstOrDefault().Departure.DepartureTime);
         }
 
         [Test]
@@ -106,7 +106,7 @@ namespace SkanetrafikenServiceAgent.Test
 
             var serviceAgent = new ServiceAgent(serviceProxy);
 
-            Assert.AreEqual(TimeSpan.FromMinutes(exampleDeviation), serviceAgent.GetStationInfo(exampleStationId).FirstOrDefault().Delay);
+            Assert.AreEqual(TimeSpan.FromMinutes(exampleDeviation), serviceAgent.GetStationInfo(exampleStationId).StationServiceInfo.FirstOrDefault().Departure.Delay);
         }
     }
 }

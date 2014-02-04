@@ -13,7 +13,7 @@ namespace BusTrackerDomain.Test
         public void GetStationInfo_ForValidStationId_ReturnsStationTimeTable()
         {
             const int exampleStationId = 1;
-            var exampleStationTimeTable = new List<DepartureInfo> { };
+            var exampleStationTimeTable = new StationInfo();
 
             var serviceAgent = Substitute.For<IServiceAgent>();
 

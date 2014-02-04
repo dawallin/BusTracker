@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<gendarme-output date="03/02/2014 00:51:57">
+<gendarme-output date="03/02/2014 00:52:15">
   <files>
-    <file Name="BusTrackerDomain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain\bin\Debug\BusTrackerDomain.dll</file>
+    <file Name="SkanetrafikenServiceAgent.IntegrationTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\bin\Debug\SkanetrafikenServiceAgent.IntegrationTest.dll</file>
   </files>
   <rules>
     <rule Name="AvoidAssemblyVersionMismatchRule" Type="Assembly" Uri="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.BadPractice.AvoidAssemblyVersionMismatchRule(2.10)">Gendarme.Rules.BadPractice.AvoidAssemblyVersionMismatchRule</rule>
@@ -191,34 +191,54 @@
     <rule Name="UseSTAThreadAttributeOnSWFEntryPointsRule" Type="Assembly" Uri="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.UI.UseSTAThreadAttributeOnSWFEntryPointsRule(2.10)">Gendarme.Rules.UI.UseSTAThreadAttributeOnSWFEntryPointsRule</rule>
   </rules>
   <results>
-    <rule Name="AvoidSmallNamespaceRule" Uri="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Design.AvoidSmallNamespaceRule(2.10)">
-      <problem>This namespaces contains very few visible types.</problem>
-      <solution>Consider merging this namespace with its parent or a sibling.</solution>
-      <target Name="BusTrackerDomain" Assembly="[across all assemblies analyzed]">
-        <defect Severity="Low" Confidence="Total" Location="BusTrackerDomain" Source="">Only 1 visible types are defined inside this namespace.</defect>
+    <rule Name="AvoidNonAlphanumericIdentifierRule" Uri="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Naming.AvoidNonAlphanumericIdentifierRule(2.10)">
+      <problem>This namespace, type or member name contains underscore(s).</problem>
+      <solution>Remove the underscore from the specified name.</solution>
+      <target Name="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteStartsInLomma()" Assembly="SkanetrafikenServiceAgent.IntegrationTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <defect Severity="Medium" Confidence="High" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteStartsInLomma()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈35)"></defect>
       </target>
-      <target Name="BusTrackerDomain.Entity" Assembly="[across all assemblies analyzed]">
-        <defect Severity="Low" Confidence="Total" Location="BusTrackerDomain.Entity" Source="">Only 4 visible types are defined inside this namespace.</defect>
+      <target Name="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteEndsAtSodervarn()" Assembly="SkanetrafikenServiceAgent.IntegrationTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <defect Severity="Medium" Confidence="High" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteEndsAtSodervarn()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈41)"></defect>
       </target>
-      <target Name="BusTrackerDomain.Interface" Assembly="[across all assemblies analyzed]">
-        <defect Severity="Low" Confidence="Total" Location="BusTrackerDomain.Interface" Source="">Only 1 visible types are defined inside this namespace.</defect>
+      <target Name="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteContains15Stops()" Assembly="SkanetrafikenServiceAgent.IntegrationTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <defect Severity="Medium" Confidence="High" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteContains15Stops()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈47)"></defect>
       </target>
     </rule>
-    <rule Name="ConsiderConvertingMethodToPropertyRule" Uri="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Design.ConsiderConvertingMethodToPropertyRule(2.10)">
-      <problem>This method looks like a candidate to be a property.</problem>
-      <solution>Either make the method a property or ignore the defect.</solution>
-      <target Name="System.Collections.Generic.IEnumerable`1&lt;BusTrackerDomain.Entity.Service&gt; BusTrackerDomain.BusTracker::GetServices()" Assembly="BusTrackerDomain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <defect Severity="Low" Confidence="Normal" Location="System.Collections.Generic.IEnumerable`1&lt;BusTrackerDomain.Entity.Service&gt; BusTrackerDomain.BusTracker::GetServices()" Source="c:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain\BusTracker.cs(≈30)"></defect>
-      </target>
-      <target Name="System.Collections.Generic.List`1&lt;BusTrackerDomain.Entity.Service&gt; BusTrackerDomain.Interface.IServiceAgent::GetServices()" Assembly="BusTrackerDomain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <defect Severity="Low" Confidence="Normal" Location="System.Collections.Generic.List`1&lt;BusTrackerDomain.Entity.Service&gt; BusTrackerDomain.Interface.IServiceAgent::GetServices()" Source=""></defect>
+    <rule Name="AvoidUnneededFieldInitializationRule" Uri="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidUnneededFieldInitializationRule(2.10)">
+      <problem>This constructor needlessly initializes zero initializes some fields.</problem>
+      <solution>Remove the unneeded initialization from the constructors.</solution>
+      <target Name="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::.cctor()" Assembly="SkanetrafikenServiceAgent.IntegrationTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <defect Severity="Medium" Confidence="High" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::.cctor()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈15)">serviceRouteCached</defect>
       </target>
     </rule>
     <rule Name="MarkAssemblyWithCLSCompliantRule" Uri="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Design.MarkAssemblyWithCLSCompliantRule(2.10)">
       <problem>This assembly is not decorated with the [CLSCompliant] attribute.</problem>
       <solution>Add this attribute to ease the use (or non-use) of your assembly by CLS consumers.</solution>
-      <target Name="BusTrackerDomain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Assembly="BusTrackerDomain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <defect Severity="High" Confidence="Total" Location="BusTrackerDomain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Source=""></defect>
+      <target Name="SkanetrafikenServiceAgent.IntegrationTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Assembly="SkanetrafikenServiceAgent.IntegrationTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <defect Severity="High" Confidence="Total" Location="SkanetrafikenServiceAgent.IntegrationTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Source=""></defect>
+      </target>
+    </rule>
+    <rule Name="MethodCanBeMadeStaticRule" Uri="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Correctness.MethodCanBeMadeStaticRule(2.10)">
+      <problem>This method does not use any instance fields, properties or methods and can be made static.</problem>
+      <solution>Make the method static.</solution>
+      <target Name="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteStartsInLomma()" Assembly="SkanetrafikenServiceAgent.IntegrationTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <defect Severity="Low" Confidence="Total" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteStartsInLomma()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈35)"></defect>
+      </target>
+      <target Name="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteEndsAtSodervarn()" Assembly="SkanetrafikenServiceAgent.IntegrationTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <defect Severity="Low" Confidence="Total" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteEndsAtSodervarn()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈41)"></defect>
+      </target>
+      <target Name="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteContains15Stops()" Assembly="SkanetrafikenServiceAgent.IntegrationTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <defect Severity="Low" Confidence="Total" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteContains15Stops()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈47)"></defect>
+      </target>
+    </rule>
+    <rule Name="ReviewLinqMethodRule" Uri="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.ReviewLinqMethodRule(2.10)">
+      <problem>A linq extension method with linear time complexity is used, but a more efficient method is available.</problem>
+      <solution>Use the more efficient method.</solution>
+      <target Name="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteEndsAtSodervarn()" Assembly="SkanetrafikenServiceAgent.IntegrationTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <defect Severity="Medium" Confidence="High" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteEndsAtSodervarn()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈43)">Use operator [] instead of the Last method.</defect>
+      </target>
+      <target Name="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteContains15Stops()" Assembly="SkanetrafikenServiceAgent.IntegrationTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <defect Severity="Medium" Confidence="High" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteContains15Stops()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈49)">Use the Count property instead of the Count () method.</defect>
       </target>
     </rule>
   </results>

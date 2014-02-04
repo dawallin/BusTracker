@@ -8,20 +8,37 @@
       <From fullname="BusTrackerDomain.BusTracker" path="c:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain\BusTracker.cs">
         <To fullname="BusTrackerDomain.Interface.IServiceAgent" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
         <To fullname="BusTrackerDomain.Entity.DepartureInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.ServiceRoute" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.Service" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="BusTrackerDomain.Entity.DepartureInfo">
+        <To fullname="BusTrackerDomain.Entity.Service" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.Station" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="BusTrackerDomain.Entity.ServiceRoute">
+        <To fullname="BusTrackerDomain.Entity.Service" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.Station" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
       </From>
       <From fullname="BusTrackerDomain.Interface.IServiceAgent">
         <To fullname="BusTrackerDomain.Entity.DepartureInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.ServiceRoute" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.Service" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
       </From>
     </TypeReferences>
     <Design>
-      <type fullName="BusTrackerDomain.BusTracker" source="c:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain\BusTracker.cs" rfc="3" dit="1">
+      <type fullName="BusTrackerDomain.BusTracker" source="c:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain\BusTracker.cs" rfc="7" dit="1">
         <block>
           <element type="Field" name="serviceAgent" />
+          <element type="Method" name="BusTrackerDomain.Entity.ServiceRoute GetServiceRoute(System.Int32)" />
+          <element type="Method" name="System.Collections.Generic.IEnumerable`1&lt;BusTrackerDomain.Entity.Service&gt; GetServices()" />
           <element type="Method" name="System.Collections.Generic.IEnumerable`1&lt;BusTrackerDomain.Entity.DepartureInfo&gt; GetStationInfo(System.Int32)" />
         </block>
       </type>
       <type fullName="&lt;Module&gt;" source="" rfc="0" dit="0" />
       <type fullName="BusTrackerDomain.Entity.DepartureInfo" source="" rfc="1" dit="1" />
+      <type fullName="BusTrackerDomain.Entity.Service" source="" rfc="1" dit="1" />
+      <type fullName="BusTrackerDomain.Entity.ServiceRoute" source="" rfc="1" dit="1" />
+      <type fullName="BusTrackerDomain.Entity.Station" source="" rfc="1" dit="1" />
       <type fullName="BusTrackerDomain.Interface.IServiceAgent" source="" rfc="0" dit="0" />
     </Design>
   </Assembly>
