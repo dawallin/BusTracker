@@ -1,0 +1,58 @@
+﻿@model BusTrackerDomain.Entity.ServiceInfo
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ServiceInfo</title>
+</head>
+<body>
+    <p>
+        @Model.Service.ServiceName (@Model.Service.ServiceId)
+    </p>
+    <table>
+        <tr>
+            <th>Station</th>
+            <th>Return Id</th>
+            <th>Return Time</th>
+            <th>Return Id</th>
+            <th>Return Time</th>
+        </tr>
+
+        @foreach (var item in Model.ServiceStationInfo)
+        {
+            <tr>
+                <td>@item.Station.Name (@item.Station.Id)</td>
+
+                @if (item.NextReturn != null)
+                {
+                    <td>@item.NextReturn.RouteId</td>
+                    <td>@(Math.Round((item.NextReturn.DepartureTime - DateTime.Now + item.NextReturn.Delay).TotalMinutes))</td>
+                }
+                else
+                {
+                    <td></td>
+                    <td></td>
+                }
+
+                @if (item.NextTo != null)
+                {
+                    <td>@item.NextTo.RouteId</td>
+                    <td>@(Math.Round((item.NextTo.DepartureTime - DateTime.Now + item.NextTo.Delay).TotalMinutes))</td>
+                }
+                else
+                {
+                    <td></td>
+                    <td></td>
+                }
+            </tr>
+        }
+
+    </table>
+</body>
+</html>

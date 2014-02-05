@@ -3,41 +3,74 @@
   <Assembly name="BusTrackerDomain" version="1.0.0.0">
     <References>
       <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
     </References>
     <TypeReferences>
       <From fullname="BusTrackerDomain.BusTracker" path="c:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain\BusTracker.cs">
         <To fullname="BusTrackerDomain.Interface.IServiceAgent" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
-        <To fullname="BusTrackerDomain.Entity.DepartureInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
-        <To fullname="BusTrackerDomain.Entity.ServiceRoute" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.StationInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
         <To fullname="BusTrackerDomain.Entity.Service" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.ServiceInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
       </From>
-      <From fullname="BusTrackerDomain.Entity.DepartureInfo">
+      <From fullname="BusTrackerDomain.Entity.StationServiceInfo">
+        <To fullname="BusTrackerDomain.Entity.Service" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.Departure" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="BusTrackerDomain.Entity.StationInfo">
+        <To fullname="BusTrackerDomain.Entity.Station" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.StationServiceInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="BusTrackerDomain.Entity.ServiceInfo">
+        <To fullname="BusTrackerDomain.Entity.Service" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.ServiceStationInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="BusTrackerDomain.Entity.ServiceRouteInfo">
         <To fullname="BusTrackerDomain.Entity.Service" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
         <To fullname="BusTrackerDomain.Entity.Station" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
       </From>
-      <From fullname="BusTrackerDomain.Entity.ServiceRoute">
-        <To fullname="BusTrackerDomain.Entity.Service" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+      <From fullname="BusTrackerDomain.Entity.ServiceStationInfo">
         <To fullname="BusTrackerDomain.Entity.Station" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.Departure" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
       </From>
       <From fullname="BusTrackerDomain.Interface.IServiceAgent">
-        <To fullname="BusTrackerDomain.Entity.DepartureInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
-        <To fullname="BusTrackerDomain.Entity.ServiceRoute" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.StationInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.ServiceRouteInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
         <To fullname="BusTrackerDomain.Entity.Service" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="BusTrackerDomain.ServiceInfoCalculator" path="c:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain\ServiceInfoCalculator.cs">
+        <To fullname="BusTrackerDomain.Interface.IServiceAgent" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.StationServiceInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.Departure" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.ServiceInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.ServiceRouteInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.Station" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.StationInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.ServiceStationInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
       </From>
     </TypeReferences>
     <Design>
-      <type fullName="BusTrackerDomain.BusTracker" source="c:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain\BusTracker.cs" rfc="7" dit="1">
+      <type fullName="BusTrackerDomain.BusTracker" source="c:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain\BusTracker.cs" rfc="8" dit="1">
         <block>
           <element type="Field" name="serviceAgent" />
-          <element type="Method" name="BusTrackerDomain.Entity.ServiceRoute GetServiceRoute(System.Int32)" />
+          <element type="Method" name="BusTrackerDomain.Entity.ServiceInfo GetServiceInfo(System.Int32)" />
           <element type="Method" name="System.Collections.Generic.IEnumerable`1&lt;BusTrackerDomain.Entity.Service&gt; GetServices()" />
-          <element type="Method" name="System.Collections.Generic.IEnumerable`1&lt;BusTrackerDomain.Entity.DepartureInfo&gt; GetStationInfo(System.Int32)" />
+          <element type="Method" name="BusTrackerDomain.Entity.StationInfo GetStationInfo(System.Int32)" />
+        </block>
+      </type>
+      <type fullName="BusTrackerDomain.ServiceInfoCalculator" source="c:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain\ServiceInfoCalculator.cs" rfc="21" dit="1">
+        <block>
+          <element type="Field" name="serviceAgent" />
+          <element type="Method" name="BusTrackerDomain.Entity.ServiceInfo GetServiceInfo(System.Int32)" />
         </block>
       </type>
       <type fullName="&lt;Module&gt;" source="" rfc="0" dit="0" />
-      <type fullName="BusTrackerDomain.Entity.DepartureInfo" source="" rfc="1" dit="1" />
+      <type fullName="BusTrackerDomain.Entity.StationServiceInfo" source="" rfc="1" dit="1" />
+      <type fullName="BusTrackerDomain.Entity.Departure" source="" rfc="1" dit="1" />
+      <type fullName="BusTrackerDomain.Entity.StationInfo" source="" rfc="1" dit="1" />
+      <type fullName="BusTrackerDomain.Entity.ServiceInfo" source="" rfc="1" dit="1" />
       <type fullName="BusTrackerDomain.Entity.Service" source="" rfc="1" dit="1" />
-      <type fullName="BusTrackerDomain.Entity.ServiceRoute" source="" rfc="1" dit="1" />
+      <type fullName="BusTrackerDomain.Entity.ServiceRouteInfo" source="" rfc="1" dit="1" />
+      <type fullName="BusTrackerDomain.Entity.ServiceStationInfo" source="" rfc="1" dit="1" />
       <type fullName="BusTrackerDomain.Entity.Station" source="" rfc="1" dit="1" />
       <type fullName="BusTrackerDomain.Interface.IServiceAgent" source="" rfc="0" dit="0" />
     </Design>

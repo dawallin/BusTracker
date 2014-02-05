@@ -18,7 +18,7 @@
       </From>
       <From fullname="BusTrackerWeb.SkanetrafikenServiceAgent.GetLineResult" path="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\Entity\GetLineResult.cs">
         <To fullname="HtmlAgilityPack.HtmlNode" assemblyname="HtmlAgilityPack" assemblyversion="1.4.6.0" />
-        <To fullname="BusTrackerDomain.Entity.ServiceRoute" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.ServiceRouteInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
         <To fullname="HtmlAgilityPack.HtmlDocument" assemblyname="HtmlAgilityPack" assemblyversion="1.4.6.0" />
         <To fullname="HtmlAgilityPack.HtmlNodeCollection" assemblyname="HtmlAgilityPack" assemblyversion="1.4.6.0" />
         <To fullname="BusTrackerDomain.Entity.Station" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
@@ -26,16 +26,20 @@
       <From fullname="BusTrackerWeb.SkanetrafikenServiceAgent.ServiceAgent" path="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\ServiceAgent.cs">
         <To fullname="BusTrackerDomain.Interface.IServiceAgent" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
         <To fullname="BusTrackerWeb.SkanetrafikenServiceAgent.Interface.IServiceProxy" assemblyname="SkanetrafikenServiceAgent" assemblyversion="1.0.0.0" />
-        <To fullname="BusTrackerDomain.Entity.DepartureInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.StationInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
         <To fullname="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult" assemblyname="SkanetrafikenServiceAgent" assemblyversion="1.0.0.0" />
         <To fullname="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetJourneyResult" assemblyname="SkanetrafikenServiceAgent" assemblyversion="1.0.0.0" />
-        <To fullname="BusTrackerDomain.Entity.ServiceRoute" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.ServiceRouteInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
         <To fullname="BusTrackerDomain.Entity.Service" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
       </From>
       <From fullname="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult" path="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\Entity\GetDepartureArrivalResult.cs">
         <To fullname="BusTrackerWeb.SkanetrafikenServiceAgent.Interface.IProxyQueryResult" assemblyname="SkanetrafikenServiceAgent" assemblyversion="1.0.0.0" />
         <To fullname="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult/Line" assemblyname="SkanetrafikenServiceAgent" assemblyversion="1.0.0.0" />
-        <To fullname="BusTrackerDomain.Entity.DepartureInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.StationServiceInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.StationInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.Station" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.Service" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.Departure" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
       </From>
       <From fullname="BusTrackerWeb.SkanetrafikenServiceAgent.ServiceFinder" path="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\ServiceFinder.cs">
         <To fullname="BusTrackerDomain.Entity.Service" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
@@ -47,12 +51,12 @@
     <Design>
       <type fullName="BusTrackerWeb.SkanetrafikenServiceAgent.GetLineResult" source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\Entity\GetLineResult.cs" rfc="33" dit="1">
         <block>
-          <element type="Method" name="BusTrackerDomain.Entity.ServiceRoute ToServiceRoute(System.String)" />
+          <element type="Method" name="BusTrackerDomain.Entity.ServiceRouteInfo ToServiceRoute(System.String)" />
         </block>
       </type>
       <type fullName="BusTrackerWeb.SkanetrafikenServiceAgent.ServiceAgent" source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\ServiceAgent.cs" rfc="35" dit="1">
         <block>
-          <element type="Method" name="System.Collections.Generic.IEnumerable`1&lt;BusTrackerDomain.Entity.DepartureInfo&gt; GetStationInfo(System.Int32)" />
+          <element type="Method" name="BusTrackerDomain.Entity.StationInfo GetStationInfo(System.Int32)" />
         </block>
         <block>
           <element type="Method" name="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetJourneyResult GetJourneyResponse(System.Int32, System.Int32, System.DateTime)" />
@@ -62,17 +66,17 @@
           <element type="Method" name="T ApiQuery(System.String)" />
         </block>
         <block>
-          <element type="Method" name="BusTrackerDomain.Entity.ServiceRoute GetServiceRoute(System.Int32)" />
+          <element type="Method" name="BusTrackerDomain.Entity.ServiceRouteInfo GetServiceRoute(System.Int32)" />
         </block>
         <block>
           <element type="Method" name="System.Collections.Generic.List`1&lt;BusTrackerDomain.Entity.Service&gt; GetServices()" />
         </block>
       </type>
-      <type fullName="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult" source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\Entity\GetDepartureArrivalResult.cs" rfc="5" dit="1">
+      <type fullName="BusTrackerWeb.SkanetrafikenServiceAgent.Entity.GetDepartureArrivalResult" source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\Entity\GetDepartureArrivalResult.cs" rfc="12" dit="1">
         <block>
           <element type="Field" name="Lines (property)" />
           <element type="Field" name="StopAreaData (property)" />
-          <element type="Method" name="System.Collections.Generic.List`1&lt;BusTrackerDomain.Entity.DepartureInfo&gt; ToDepartureInfo(System.Int32)" />
+          <element type="Method" name="BusTrackerDomain.Entity.StationInfo ToStationInfo(System.Int32)" />
         </block>
       </type>
       <type fullName="BusTrackerWeb.SkanetrafikenServiceAgent.ServiceFinder" source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\ServiceFinder.cs" rfc="16" dit="1">
@@ -97,6 +101,7 @@
   <Assembly name="BusTrackerDomain" version="1.0.0.0">
     <References>
       <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
     </References>
   </Assembly>
   <Assembly name="HtmlAgilityPack" version="1.4.6.0">

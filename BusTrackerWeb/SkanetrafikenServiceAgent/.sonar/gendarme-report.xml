@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<gendarme-output date="03/02/2014 00:52:06">
+<gendarme-output date="04/02/2014 01:33:28">
   <files>
     <file Name="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\bin\Debug\SkanetrafikenServiceAgent.dll</file>
   </files>
@@ -287,8 +287,8 @@
     <rule Name="MethodCanBeMadeStaticRule" Uri="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Correctness.MethodCanBeMadeStaticRule(2.10)">
       <problem>This method does not use any instance fields, properties or methods and can be made static.</problem>
       <solution>Make the method static.</solution>
-      <target Name="BusTrackerDomain.Entity.ServiceRoute BusTrackerWeb.SkanetrafikenServiceAgent.GetLineResult::ToServiceRoute(System.String)" Assembly="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <defect Severity="Low" Confidence="Total" Location="BusTrackerDomain.Entity.ServiceRoute BusTrackerWeb.SkanetrafikenServiceAgent.GetLineResult::ToServiceRoute(System.String)" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\Entity\GetLineResult.cs(≈14)"></defect>
+      <target Name="BusTrackerDomain.Entity.ServiceRouteInfo BusTrackerWeb.SkanetrafikenServiceAgent.GetLineResult::ToServiceRoute(System.String)" Assembly="SkanetrafikenServiceAgent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <defect Severity="Low" Confidence="Total" Location="BusTrackerDomain.Entity.ServiceRouteInfo BusTrackerWeb.SkanetrafikenServiceAgent.GetLineResult::ToServiceRoute(System.String)" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\Entity\GetLineResult.cs(≈14)"></defect>
       </target>
     </rule>
   </results>

@@ -30,3 +30,10 @@ C:\Git\Bus Tracker\BusTrackerWeb\BusTrackerWeb\obj\Debug\BusTrackerWeb.dll
 C:\Git\Bus Tracker\BusTrackerWeb\BusTrackerWeb\obj\Debug\BusTrackerWeb.pdb
 C:\Git\Bus Tracker\BusTrackerWeb\BusTrackerWeb\bin\NSubstitute.dll
 C:\Git\Bus Tracker\BusTrackerWeb\BusTrackerWeb\bin\NSubstitute.xml
+C:\Git\Bus Tracker\BusTrackerWeb\BusTrackerWeb\bin\BusTrackerDomain.dll
+C:\Git\Bus Tracker\BusTrackerWeb\BusTrackerWeb\bin\SkanetrafikenServiceAgent.dll
+C:\Git\Bus Tracker\BusTrackerWeb\BusTrackerWeb\bin\HtmlAgilityPack.dll
+C:\Git\Bus Tracker\BusTrackerWeb\BusTrackerWeb\bin\BusTrackerDomain.pdb
+C:\Git\Bus Tracker\BusTrackerWeb\BusTrackerWeb\bin\SkanetrafikenServiceAgent.pdb
+C:\Git\Bus Tracker\BusTrackerWeb\BusTrackerWeb\bin\HtmlAgilityPack.pdb
+C:\Git\Bus Tracker\BusTrackerWeb\BusTrackerWeb\bin\HtmlAgilityPack.xml

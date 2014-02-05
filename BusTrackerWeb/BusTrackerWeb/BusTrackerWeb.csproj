@@ -125,6 +125,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\BusTrackerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -187,6 +188,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <None Include="Properties\PublishProfiles\Local IIS.pubxml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
@@ -214,14 +216,26 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\BusTracker\StationInfo.cshtml" />
+    <Content Include="Views\BusTracker\ServiceInfo.cshtml" />
+    <Content Include="Views\BusTracker\ServiceInfo2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BusTrackerDomain\BusTrackerDomain\BusTrackerDomain.csproj">
+      <Project>{bebd4a84-059f-470a-9784-97799758cc64}</Project>
+      <Name>BusTrackerDomain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SkanetrafikenServiceAgent\SkanetrafikenServiceAgent.csproj">
+      <Project>{daf0814f-4ef2-4de4-9b45-162c0bd2e12f}</Project>
+      <Name>SkanetrafikenServiceAgent</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

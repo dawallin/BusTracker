@@ -1,0 +1,40 @@
+﻿@model BusTrackerDomain.Entity.StationInfo
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Model.Station.Name (@Model.Station.Id)
+    </p>
+    <table>
+        <tr>
+            <th>Route</th>
+            <th>Id</th>
+            <th>Direction</th>
+            <th>DepartureTime</th>                        
+            <th>Delay</th>
+        </tr>
+
+        @foreach (var item in Model.StationServiceInfo)
+        {
+            <tr>
+                <td>@item.Service.ServiceName - @item.Service.ServiceId</td>
+                <td>@item.Departure.RouteId</td>
+                <td>@item.Departure.Direction</td>
+                <td>@item.Departure.DepartureTime</td>
+                <td>@item.Departure.Delay</td>
+            </tr>
+        }
+
+    </table>
+</body>
+</html>

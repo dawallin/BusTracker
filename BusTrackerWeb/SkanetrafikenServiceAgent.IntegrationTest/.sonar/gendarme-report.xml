@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<gendarme-output date="03/02/2014 00:52:15">
+<gendarme-output date="04/02/2014 01:33:38">
   <files>
     <file Name="SkanetrafikenServiceAgent.IntegrationTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\bin\Debug\SkanetrafikenServiceAgent.IntegrationTest.dll</file>
   </files>
@@ -195,20 +195,20 @@
       <problem>This namespace, type or member name contains underscore(s).</problem>
       <solution>Remove the underscore from the specified name.</solution>
       <target Name="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteStartsInLomma()" Assembly="SkanetrafikenServiceAgent.IntegrationTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <defect Severity="Medium" Confidence="High" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteStartsInLomma()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈35)"></defect>
+        <defect Severity="Medium" Confidence="High" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteStartsInLomma()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈34)"></defect>
       </target>
       <target Name="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteEndsAtSodervarn()" Assembly="SkanetrafikenServiceAgent.IntegrationTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <defect Severity="Medium" Confidence="High" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteEndsAtSodervarn()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈41)"></defect>
+        <defect Severity="Medium" Confidence="High" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteEndsAtSodervarn()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈40)"></defect>
       </target>
       <target Name="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteContains15Stops()" Assembly="SkanetrafikenServiceAgent.IntegrationTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <defect Severity="Medium" Confidence="High" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteContains15Stops()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈47)"></defect>
+        <defect Severity="Medium" Confidence="High" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteContains15Stops()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈46)"></defect>
       </target>
     </rule>
     <rule Name="AvoidUnneededFieldInitializationRule" Uri="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidUnneededFieldInitializationRule(2.10)">
       <problem>This constructor needlessly initializes zero initializes some fields.</problem>
       <solution>Remove the unneeded initialization from the constructors.</solution>
       <target Name="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::.cctor()" Assembly="SkanetrafikenServiceAgent.IntegrationTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <defect Severity="Medium" Confidence="High" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::.cctor()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈15)">serviceRouteCached</defect>
+        <defect Severity="Medium" Confidence="High" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::.cctor()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈14)">serviceRouteCached</defect>
       </target>
     </rule>
     <rule Name="MarkAssemblyWithCLSCompliantRule" Uri="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Design.MarkAssemblyWithCLSCompliantRule(2.10)">
@@ -222,23 +222,23 @@
       <problem>This method does not use any instance fields, properties or methods and can be made static.</problem>
       <solution>Make the method static.</solution>
       <target Name="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteStartsInLomma()" Assembly="SkanetrafikenServiceAgent.IntegrationTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <defect Severity="Low" Confidence="Total" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteStartsInLomma()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈35)"></defect>
+        <defect Severity="Low" Confidence="Total" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteStartsInLomma()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈34)"></defect>
       </target>
       <target Name="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteEndsAtSodervarn()" Assembly="SkanetrafikenServiceAgent.IntegrationTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <defect Severity="Low" Confidence="Total" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteEndsAtSodervarn()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈41)"></defect>
+        <defect Severity="Low" Confidence="Total" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteEndsAtSodervarn()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈40)"></defect>
       </target>
       <target Name="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteContains15Stops()" Assembly="SkanetrafikenServiceAgent.IntegrationTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <defect Severity="Low" Confidence="Total" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteContains15Stops()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈47)"></defect>
+        <defect Severity="Low" Confidence="Total" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteContains15Stops()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈46)"></defect>
       </target>
     </rule>
     <rule Name="ReviewLinqMethodRule" Uri="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.ReviewLinqMethodRule(2.10)">
       <problem>A linq extension method with linear time complexity is used, but a more efficient method is available.</problem>
       <solution>Use the more efficient method.</solution>
       <target Name="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteEndsAtSodervarn()" Assembly="SkanetrafikenServiceAgent.IntegrationTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <defect Severity="Medium" Confidence="High" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteEndsAtSodervarn()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈43)">Use operator [] instead of the Last method.</defect>
+        <defect Severity="Medium" Confidence="High" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteEndsAtSodervarn()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈42)">Use operator [] instead of the Last method.</defect>
       </target>
       <target Name="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteContains15Stops()" Assembly="SkanetrafikenServiceAgent.IntegrationTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <defect Severity="Medium" Confidence="High" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteContains15Stops()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈49)">Use the Count property instead of the Count () method.</defect>
+        <defect Severity="Medium" Confidence="High" Location="System.Void SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest::CallAndParseLineResult_Given133AsRouteKey_ServiceRouteContains15Stops()" Source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs(≈48)">Use the Count property instead of the Count () method.</defect>
       </target>
     </rule>
   </results>

@@ -12,7 +12,7 @@
     <TypeReferences>
       <From fullname="SkanetrafikenServiceAgent.IntegrationTest.SkanetrafikenServiceAgentIntegrationTest" path="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgentIntegrationTest.cs">
         <To fullname="NUnit.Framework.TestFixtureAttribute" assemblyname="nunit.framework" assemblyversion="2.6.3.13283" />
-        <To fullname="BusTrackerDomain.Entity.ServiceRoute" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.ServiceRouteInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
         <To fullname="BusTrackerWeb.SkanetrafikenServiceAgent.Interface.IServiceProxy" assemblyname="SkanetrafikenServiceAgent" assemblyversion="1.0.0.0" />
         <To fullname="BusTrackerWeb.SkanetrafikenServiceAgent.ServiceAgent" assemblyname="SkanetrafikenServiceAgent" assemblyversion="1.0.0.0" />
         <To fullname="NUnit.Framework.TestAttribute" assemblyname="nunit.framework" assemblyversion="2.6.3.13283" />
@@ -36,6 +36,7 @@
   <Assembly name="BusTrackerDomain" version="1.0.0.0">
     <References>
       <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
     </References>
   </Assembly>
   <Assembly name="nunit.framework" version="2.6.3.13283">

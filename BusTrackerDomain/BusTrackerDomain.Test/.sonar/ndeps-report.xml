@@ -6,14 +6,28 @@
       <Reference name="nunit.framework" fullName="nunit.framework, Version=2.6.3.13283, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77" version="2.6.3.13283" />
       <Reference name="BusTrackerDomain" fullName="BusTrackerDomain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" version="1.0.0.0" />
       <Reference name="NSubstitute" fullName="NSubstitute, Version=1.7.1.0, Culture=neutral, PublicKeyToken=92dd2e9066daa5ca" version="1.7.1.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
     </References>
     <TypeReferences>
       <From fullname="BusTrackerDomain.Test.BusTrackerTest" path="c:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\BusTrackerTest.cs">
         <To fullname="NUnit.Framework.TestFixtureAttribute" assemblyname="nunit.framework" assemblyversion="2.6.3.13283" />
         <To fullname="NUnit.Framework.TestAttribute" assemblyname="nunit.framework" assemblyversion="2.6.3.13283" />
-        <To fullname="BusTrackerDomain.Entity.DepartureInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.StationInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
         <To fullname="BusTrackerDomain.Interface.IServiceAgent" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
         <To fullname="BusTrackerDomain.BusTracker" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+      </From>
+      <From fullname="BusTrackerDomain.Test.ServiceInfoCalculatorTest" path="c:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\ServiceInfoCalculatorTest.cs">
+        <To fullname="NUnit.Framework.TestFixtureAttribute" assemblyname="nunit.framework" assemblyversion="2.6.3.13283" />
+        <To fullname="BusTrackerDomain.Entity.ServiceStationInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.Station" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="NUnit.Framework.TestAttribute" assemblyname="nunit.framework" assemblyversion="2.6.3.13283" />
+        <To fullname="BusTrackerDomain.Entity.ServiceRouteInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Interface.IServiceAgent" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.BusTracker" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.Service" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.StationInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.StationServiceInfo" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
+        <To fullname="BusTrackerDomain.Entity.Departure" assemblyname="BusTrackerDomain" assemblyversion="1.0.0.0" />
       </From>
     </TypeReferences>
   </Assembly>
@@ -27,6 +41,7 @@
   <Assembly name="BusTrackerDomain" version="1.0.0.0">
     <References>
       <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
     </References>
   </Assembly>
   <Assembly name="NSubstitute" version="1.7.1.0">

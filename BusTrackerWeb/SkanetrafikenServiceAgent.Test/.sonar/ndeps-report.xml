@@ -52,6 +52,7 @@
   <Assembly name="BusTrackerDomain" version="1.0.0.0">
     <References>
       <Reference name="mscorlib" fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
+      <Reference name="System.Core" fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="4.0.0.0" />
     </References>
   </Assembly>
   <Assembly name="HtmlAgilityPack" version="1.4.6.0">
