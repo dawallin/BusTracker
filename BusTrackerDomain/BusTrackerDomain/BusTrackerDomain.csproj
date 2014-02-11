@@ -40,6 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusTracker.cs" />
+    <Compile Include="Entity\JourneyInfo.cs" />
+    <Compile Include="Entity\Journey.cs" />
     <Compile Include="Entity\StationServiceInfo.cs" />
     <Compile Include="Entity\Departure.cs" />
     <Compile Include="Entity\StationInfo.cs" />

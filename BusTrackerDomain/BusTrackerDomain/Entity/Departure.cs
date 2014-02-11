@@ -10,6 +10,8 @@ namespace BusTrackerDomain.Entity
         public DateTime DepartureTime { get; set; }
         public TimeSpan Delay { get; set; }
 
+        public bool Passed { get; set; }
+
         public string Note { get; set; }
     }
 }

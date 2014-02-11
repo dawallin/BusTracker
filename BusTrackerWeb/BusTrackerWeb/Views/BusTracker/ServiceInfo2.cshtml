@@ -18,13 +18,13 @@
     <table>
         <tr>
             <th>Station</th>
-            <th>Return Id</th>
-            <th>Return Time</th>
+            <th>To Id</th>
+            <th>To Time</th>
             <th>Return Id</th>
             <th>Return Time</th>
         </tr>
 
-        @foreach (var item in Model.ServiceStationInfo)
+        @foreach (var item in Model.ServiceStationInfos)
         {
             <tr>
                 <td>@item.Station.Name (@item.Station.Id)</td>
@@ -50,6 +50,26 @@
                     <td></td>
                     <td></td>
                 }
+            </tr>
+        }
+
+    </table>
+    
+    <table>
+        <tr>
+            <th>Service</th>
+            <th>RouteId</th>
+            <th>Direction</th>
+            <th>Next Station</th>
+        </tr>
+
+        @foreach (var item in Model.JourneyInfos)
+        {
+            <tr>
+                <td>@item.Journey.Service.ServiceName (@item.Journey.Service.ServiceId)</td>
+                    <td>@item.Journey.RouteId</td>
+                    <td>@item.Journey.Direction</td>
+                    <td>@item.NextStation.Name (@item.NextStation.Id)</td>                      
             </tr>
         }
 

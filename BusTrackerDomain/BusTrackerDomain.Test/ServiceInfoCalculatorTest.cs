@@ -42,7 +42,7 @@ namespace BusTrackerDomain.Test
 
             var busTracker = new BusTracker(serviceAgent);
 
-            Assert.AreEqual(exampleServiceRoute.Stations, busTracker.GetServiceInfo(exampleServiceId).ServiceStationInfo.Select(s => s.Station).ToList());
+            Assert.AreEqual(exampleServiceRoute.Stations, busTracker.GetServiceInfo(exampleServiceId).ServiceStationInfos.Select(s => s.Station).ToList());
         }
 
         [Test]
@@ -100,7 +100,7 @@ namespace BusTrackerDomain.Test
 
             var busTracker = new BusTracker(serviceAgent);
 
-            Assert.AreEqual(exampleStationInfo.StationServiceInfo.FirstOrDefault().Departure.DepartureTime, busTracker.GetServiceInfo(exampleServiceId).ServiceStationInfo.FirstOrDefault(s => s.Station == exampleStationInfo.Station).NextTo.DepartureTime);
+            Assert.AreEqual(exampleStationInfo.StationServiceInfo.FirstOrDefault().Departure.DepartureTime, busTracker.GetServiceInfo(exampleServiceId).ServiceStationInfos.FirstOrDefault(s => s.Station == exampleStationInfo.Station).NextTo.DepartureTime);
         }
     }
 }

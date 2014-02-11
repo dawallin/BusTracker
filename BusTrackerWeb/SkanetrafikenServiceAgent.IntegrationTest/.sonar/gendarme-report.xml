@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<gendarme-output date="04/02/2014 01:33:38">
+<gendarme-output date="05/02/2014 00:46:13">
   <files>
     <file Name="SkanetrafikenServiceAgent.IntegrationTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.IntegrationTest\bin\Debug\SkanetrafikenServiceAgent.IntegrationTest.dll</file>
   </files>

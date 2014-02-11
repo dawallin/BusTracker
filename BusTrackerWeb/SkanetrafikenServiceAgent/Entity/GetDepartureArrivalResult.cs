@@ -104,11 +104,16 @@ namespace BusTrackerWeb.SkanetrafikenServiceAgent.Entity
                         Delay = TimeSpan.FromMinutes(line.RealTime != null && line.RealTime.RealTimeInfo != null ? line.RealTime.RealTimeInfo.DepTimeDeviation : 0),
                         DepartureTime = line.JourneyDateTime,
                         Direction = line.RunNo % 2,
-                        Note = (line.RealTime != null && line.RealTime.RealTimeInfo != null && line.RealTime.RealTimeInfo.DepDeviationAffect != null ? line.RealTime.RealTimeInfo.DepDeviationAffect : string.Empty) + ", " + line.Deviations,
+                        Note = DepDeviationAffect(line) + ", " + line.Deviations,
+                        Passed = DepDeviationAffect(line)  == "PASSED"
                     }
             }).ToList();
             return stationInfo;
+        }
 
+        private string DepDeviationAffect(Line line)
+        {
+            return (line.RealTime != null && line.RealTime.RealTimeInfo != null && line.RealTime.RealTimeInfo.DepDeviationAffect != null) ? line.RealTime.RealTimeInfo.DepDeviationAffect : string.Empty;
         }
     }
 }

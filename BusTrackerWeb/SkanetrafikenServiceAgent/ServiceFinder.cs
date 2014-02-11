@@ -13,9 +13,12 @@ namespace BusTrackerWeb.SkanetrafikenServiceAgent
 
         public ServiceFinder()
         {
-            serviceData.Add(new Service() { ServiceId = 133, ServiceName = "133" }, "17095110733025101771900050800010009");
-            serviceData.Add(new Service() { ServiceId = 139, ServiceName = "139" }, "17095110733025101828700055200010014");    
-            serviceData.Add(new Service() { ServiceId = 4, ServiceName = "4" }, "17095110733025100255600014200100014");
+            serviceData.Add(new Service() { ServiceId = 133, ServiceName = "133" }, "13852135632032101776600050800010009");
+            serviceData.Add(new Service() { ServiceId = 139, ServiceName = "139" }, "13852135632032101826900055000010014");
+            serviceData.Add(new Service() { ServiceId = 4, ServiceName = "4" }, "13852135632032100219000010900100014");
+            serviceData.Add(new Service() { ServiceId = 3, ServiceName = "3" }, "13852135632032100155200006100060009");
+            serviceData.Add(new Service() { ServiceId = 8, ServiceName = "8" }, "13852135632032100486100025000210024");
+            
         }
 
         public List<Service> GetServices()

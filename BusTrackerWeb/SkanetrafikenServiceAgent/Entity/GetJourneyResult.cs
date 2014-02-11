@@ -32,8 +32,12 @@ namespace BusTrackerWeb.SkanetrafikenServiceAgent.Entity
 
             public class LineInfo
             {
+                public string Name { get; set; }
                 public string No { get; set; }
+                public int RunNo { get; set; }
             }
         }
+
+
     }
 }

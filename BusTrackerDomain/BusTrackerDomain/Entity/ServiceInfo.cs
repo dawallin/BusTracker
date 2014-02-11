@@ -10,6 +10,8 @@ namespace BusTrackerDomain.Entity
     {
         public Service Service { get; set; }
 
-        public List<ServiceStationInfo> ServiceStationInfo { get; set; }
+        public List<ServiceStationInfo> ServiceStationInfos { get; set; }
+
+        public List<JourneyInfo> JourneyInfos { get; set; } 
     }
 }

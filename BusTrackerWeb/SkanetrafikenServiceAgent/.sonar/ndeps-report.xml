@@ -79,7 +79,7 @@
           <element type="Method" name="BusTrackerDomain.Entity.StationInfo ToStationInfo(System.Int32)" />
         </block>
       </type>
-      <type fullName="BusTrackerWeb.SkanetrafikenServiceAgent.ServiceFinder" source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\ServiceFinder.cs" rfc="16" dit="1">
+      <type fullName="BusTrackerWeb.SkanetrafikenServiceAgent.ServiceFinder" source="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent\ServiceFinder.cs" rfc="17" dit="1">
         <block>
           <element type="Field" name="serviceData" />
           <element type="Method" name="System.String GetRouteKey(System.Int32)" />

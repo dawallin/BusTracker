@@ -9,6 +9,8 @@ namespace BusTrackerDomain.Interface
 {
     public interface IServiceAgent
     {
+        //Journey GetJourney(int serviceId, int fromStationId, int toStationId, DateTime time);
+
         StationInfo GetStationInfo(int stationId);
 
         ServiceRouteInfo GetServiceRoute(int serviceId);
