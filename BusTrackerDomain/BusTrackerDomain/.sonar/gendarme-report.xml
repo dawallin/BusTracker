@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<gendarme-output date="05/02/2014 00:45:57">
+<gendarme-output date="11/02/2014 23:01:09">
   <files>
     <file Name="BusTrackerDomain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain\bin\Debug\BusTrackerDomain.dll</file>
   </files>

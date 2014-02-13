@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkanetrafikenServiceAgent.T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkanetrafikenServiceAgent.IntegrationTest", "SkanetrafikenServiceAgent.IntegrationTest\SkanetrafikenServiceAgent.IntegrationTest.csproj", "{496B5EAB-3DDB-4C87-937E-1AB2A7A0299B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BustrackerWeb2", "BustrackerWeb2\BustrackerWeb2.csproj", "{B449C9FA-26BE-4061-92D7-29ADFCE53A93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{496B5EAB-3DDB-4C87-937E-1AB2A7A0299B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{496B5EAB-3DDB-4C87-937E-1AB2A7A0299B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{496B5EAB-3DDB-4C87-937E-1AB2A7A0299B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B449C9FA-26BE-4061-92D7-29ADFCE53A93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B449C9FA-26BE-4061-92D7-29ADFCE53A93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B449C9FA-26BE-4061-92D7-29ADFCE53A93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B449C9FA-26BE-4061-92D7-29ADFCE53A93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

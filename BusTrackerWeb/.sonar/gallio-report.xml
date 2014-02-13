@@ -246,9 +246,9 @@
     </test>
     <annotations />
   </testModel>
-  <testPackageRun startTime="2014-02-05T01:45:39.0821113+01:00" endTime="2014-02-05T01:45:44.1207474+01:00">
-    <testStepRun startTime="2014-02-05T01:45:40.7983276+01:00" endTime="2014-02-05T01:45:44.1217466+01:00">
-      <testStep id="67ab5a3ba7da8cc5" name="Root" fullName="" testId="c2722843734a7a54" isPrimary="true" isTestCase="false" isDynamic="false">
+  <testPackageRun startTime="2014-02-12T00:00:50.3161643+01:00" endTime="2014-02-12T00:00:55.6818397+01:00">
+    <testStepRun startTime="2014-02-12T00:00:52.4164285+01:00" endTime="2014-02-12T00:00:55.6838393+01:00">
+      <testStep id="d8623846206c5131" name="Root" fullName="" testId="c2722843734a7a54" isPrimary="true" isTestCase="false" isDynamic="false">
         <codeReference />
         <codeLocation />
         <metadata>
@@ -258,8 +258,8 @@
         </metadata>
       </testStep>
       <children>
-        <testStepRun startTime="2014-02-05T01:45:40.8453336+01:00" endTime="2014-02-05T01:45:42.9746026+01:00">
-          <testStep id="a011ecf46d7e37d0" name="BusTrackerDomain.Test" fullName="BusTrackerDomain.Test" testId="e99e4676da95d529" isPrimary="true" isTestCase="false" isDynamic="false">
+        <testStepRun startTime="2014-02-12T00:00:52.4724345+01:00" endTime="2014-02-12T00:00:54.5216929+01:00">
+          <testStep id="32983619235aa7a1" name="BusTrackerDomain.Test" fullName="BusTrackerDomain.Test" testId="e99e4676da95d529" isPrimary="true" isTestCase="false" isDynamic="false">
             <codeReference assembly="BusTrackerDomain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
             <codeLocation path="C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\BusTrackerDomain.Test.dll" />
             <metadata>
@@ -293,8 +293,8 @@
             </metadata>
           </testStep>
           <children>
-            <testStepRun startTime="2014-02-05T01:45:40.8463349+01:00" endTime="2014-02-05T01:45:42.9746026+01:00">
-              <testStep id="809c1bb6b6b2476c" name="BusTrackerDomain" fullName="BusTrackerDomain.Test/BusTrackerDomain" testId="55a6ae20daebffb2" isPrimary="true" isTestCase="false" isDynamic="false">
+            <testStepRun startTime="2014-02-12T00:00:52.4724345+01:00" endTime="2014-02-12T00:00:54.5216929+01:00">
+              <testStep id="351f97fc8befd282" name="BusTrackerDomain" fullName="BusTrackerDomain.Test/BusTrackerDomain" testId="55a6ae20daebffb2" isPrimary="true" isTestCase="false" isDynamic="false">
                 <codeReference assembly="BusTrackerDomain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
                 <codeLocation path="C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\BusTrackerDomain.Test.dll" />
                 <metadata>
@@ -304,8 +304,8 @@
                 </metadata>
               </testStep>
               <children>
-                <testStepRun startTime="2014-02-05T01:45:40.8463349+01:00" endTime="2014-02-05T01:45:42.9746026+01:00">
-                  <testStep id="dcf3a5afb5a68676" name="Test" fullName="BusTrackerDomain.Test/BusTrackerDomain/Test" testId="1ba50ec3fadf5745" isPrimary="true" isTestCase="false" isDynamic="false">
+                <testStepRun startTime="2014-02-12T00:00:52.4724345+01:00" endTime="2014-02-12T00:00:54.5216929+01:00">
+                  <testStep id="4896d4628bac8c85" name="Test" fullName="BusTrackerDomain.Test/BusTrackerDomain/Test" testId="1ba50ec3fadf5745" isPrimary="true" isTestCase="false" isDynamic="false">
                     <codeReference assembly="BusTrackerDomain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
                     <codeLocation path="C:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\bin\Debug\BusTrackerDomain.Test.dll" />
                     <metadata>
@@ -315,8 +315,8 @@
                     </metadata>
                   </testStep>
                   <children>
-                    <testStepRun startTime="2014-02-05T01:45:40.8463349+01:00" endTime="2014-02-05T01:45:42.8325845+01:00">
-                      <testStep id="bd729e4870d68d2b" name="BusTrackerTest" fullName="BusTrackerDomain.Test/BusTrackerDomain/Test/BusTrackerTest" testId="f27aca9c255d43be" isPrimary="true" isTestCase="false" isDynamic="false">
+                    <testStepRun startTime="2014-02-12T00:00:52.4724345+01:00" endTime="2014-02-12T00:00:54.386676+01:00">
+                      <testStep id="f49b2316e85f1c9f" name="BusTrackerTest" fullName="BusTrackerDomain.Test/BusTrackerDomain/Test/BusTrackerTest" testId="f27aca9c255d43be" isPrimary="true" isTestCase="false" isDynamic="false">
                         <codeReference assembly="BusTrackerDomain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" namespace="BusTrackerDomain.Test" type="BusTrackerDomain.Test.BusTrackerTest" />
                         <codeLocation path="c:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\BusTrackerTest.cs" />
                         <metadata>
@@ -326,8 +326,8 @@
                         </metadata>
                       </testStep>
                       <children>
-                        <testStepRun startTime="2014-02-05T01:45:40.8513352+01:00" endTime="2014-02-05T01:45:42.8065812+01:00">
-                          <testStep id="746e5b2f1fb97027" name="GetStationInfo_ForValidStationId_ReturnsStationTimeTable" fullName="BusTrackerDomain.Test/BusTrackerDomain/Test/BusTrackerTest/GetStationInfo_ForValidStationId_ReturnsStationTimeTable" testId="5627b86bac45bf6f" isPrimary="true" isTestCase="true" isDynamic="false">
+                        <testStepRun startTime="2014-02-12T00:00:52.4764355+01:00" endTime="2014-02-12T00:00:54.3606731+01:00">
+                          <testStep id="dab568ef9a9b5caf" name="GetStationInfo_ForValidStationId_ReturnsStationTimeTable" fullName="BusTrackerDomain.Test/BusTrackerDomain/Test/BusTrackerTest/GetStationInfo_ForValidStationId_ReturnsStationTimeTable" testId="5627b86bac45bf6f" isPrimary="true" isTestCase="true" isDynamic="false">
                             <codeReference assembly="BusTrackerDomain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" namespace="BusTrackerDomain.Test" type="BusTrackerDomain.Test.BusTrackerTest" member="GetStationInfo_ForValidStationId_ReturnsStationTimeTable" />
                             <codeLocation path="c:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\BusTrackerTest.cs" line="14" />
                             <metadata>
@@ -337,7 +337,7 @@
                             </metadata>
                           </testStep>
                           <children />
-                          <result assertCount="1" duration="1.9500476999999998">
+                          <result assertCount="1" duration="1.8787699">
                             <outcome status="passed" />
                           </result>
                           <testLog>
@@ -346,7 +346,7 @@
                           </testLog>
                         </testStepRun>
                       </children>
-                      <result assertCount="1" duration="1.9603309">
+                      <result assertCount="1" duration="1.8887950999999998">
                         <outcome status="passed" />
                       </result>
                       <testLog>
@@ -354,8 +354,8 @@
                         <attachments />
                       </testLog>
                     </testStepRun>
-                    <testStepRun startTime="2014-02-05T01:45:42.8325845+01:00" endTime="2014-02-05T01:45:42.9746026+01:00">
-                      <testStep id="e30bfb44998325f3" name="ServiceInfoCalculatorTest" fullName="BusTrackerDomain.Test/BusTrackerDomain/Test/ServiceInfoCalculatorTest" testId="1ac1c54505555de1" isPrimary="true" isTestCase="false" isDynamic="false">
+                    <testStepRun startTime="2014-02-12T00:00:54.386676+01:00" endTime="2014-02-12T00:00:54.5216929+01:00">
+                      <testStep id="30b6a24fb55f7219" name="ServiceInfoCalculatorTest" fullName="BusTrackerDomain.Test/BusTrackerDomain/Test/ServiceInfoCalculatorTest" testId="1ac1c54505555de1" isPrimary="true" isTestCase="false" isDynamic="false">
                         <codeReference assembly="BusTrackerDomain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" namespace="BusTrackerDomain.Test" type="BusTrackerDomain.Test.ServiceInfoCalculatorTest" />
                         <codeLocation path="c:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\ServiceInfoCalculatorTest.cs" />
                         <metadata>
@@ -365,8 +365,8 @@
                         </metadata>
                       </testStep>
                       <children>
-                        <testStepRun startTime="2014-02-05T01:45:42.8325845+01:00" endTime="2014-02-05T01:45:42.8395853+01:00">
-                          <testStep id="973b2df48a749a19" name="GetServiceInfo_ForValidServiceId_ReturnsAllStations" fullName="BusTrackerDomain.Test/BusTrackerDomain/Test/ServiceInfoCalculatorTest/GetServiceInfo_ForValidServiceId_ReturnsAllStations" testId="9e3f738bdcb01aaf" isPrimary="true" isTestCase="true" isDynamic="false">
+                        <testStepRun startTime="2014-02-12T00:00:54.386676+01:00" endTime="2014-02-12T00:00:54.3946773+01:00">
+                          <testStep id="b9e0825e13170835" name="GetServiceInfo_ForValidServiceId_ReturnsAllStations" fullName="BusTrackerDomain.Test/BusTrackerDomain/Test/ServiceInfoCalculatorTest/GetServiceInfo_ForValidServiceId_ReturnsAllStations" testId="9e3f738bdcb01aaf" isPrimary="true" isTestCase="true" isDynamic="false">
                             <codeReference assembly="BusTrackerDomain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" namespace="BusTrackerDomain.Test" type="BusTrackerDomain.Test.ServiceInfoCalculatorTest" member="GetServiceInfo_ForValidServiceId_ReturnsAllStations" />
                             <codeLocation path="c:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\ServiceInfoCalculatorTest.cs" line="17" />
                             <metadata>
@@ -376,7 +376,7 @@
                             </metadata>
                           </testStep>
                           <children />
-                          <result assertCount="1" duration="0.0345781">
+                          <result assertCount="1" duration="0.035425899999999996">
                             <outcome status="passed" />
                           </result>
                           <testLog>
@@ -384,8 +384,8 @@
                             <attachments />
                           </testLog>
                         </testStepRun>
-                        <testStepRun startTime="2014-02-05T01:45:42.8395853+01:00" endTime="2014-02-05T01:45:42.9746026+01:00">
-                          <testStep id="c5a867c265c3ccb8" name="GetServiceInfo_ForValidServiceId_ReturnsFirstNextToDeparture" fullName="BusTrackerDomain.Test/BusTrackerDomain/Test/ServiceInfoCalculatorTest/GetServiceInfo_ForValidServiceId_ReturnsFirstNextToDeparture" testId="fb9003b7fd5e4a3e" isPrimary="true" isTestCase="true" isDynamic="false">
+                        <testStepRun startTime="2014-02-12T00:00:54.3956782+01:00" endTime="2014-02-12T00:00:54.5216929+01:00">
+                          <testStep id="fdbc400c19fd9c76" name="GetServiceInfo_ForValidServiceId_ReturnsFirstNextToDeparture" fullName="BusTrackerDomain.Test/BusTrackerDomain/Test/ServiceInfoCalculatorTest/GetServiceInfo_ForValidServiceId_ReturnsFirstNextToDeparture" testId="fb9003b7fd5e4a3e" isPrimary="true" isTestCase="true" isDynamic="false">
                             <codeReference assembly="BusTrackerDomain.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" namespace="BusTrackerDomain.Test" type="BusTrackerDomain.Test.ServiceInfoCalculatorTest" member="GetServiceInfo_ForValidServiceId_ReturnsFirstNextToDeparture" />
                             <codeLocation path="c:\Git\Bus Tracker\BusTrackerDomain\BusTrackerDomain.Test\ServiceInfoCalculatorTest.cs" line="16707566" />
                             <metadata>
@@ -395,7 +395,7 @@
                             </metadata>
                           </testStep>
                           <children />
-                          <result assertCount="1" duration="0.1346503">
+                          <result assertCount="1" duration="0.1265378">
                             <outcome status="passed" />
                           </result>
                           <testLog>
@@ -404,7 +404,7 @@
                           </testLog>
                         </testStepRun>
                       </children>
-                      <result assertCount="2" duration="0.1698285">
+                      <result assertCount="2" duration="0.1625788">
                         <outcome status="passed" />
                       </result>
                       <testLog>
@@ -413,7 +413,7 @@
                       </testLog>
                     </testStepRun>
                   </children>
-                  <result assertCount="3" duration="2.132503">
+                  <result assertCount="3" duration="2.0531460999999998">
                     <outcome status="passed" />
                   </result>
                   <testLog>
@@ -422,7 +422,7 @@
                   </testLog>
                 </testStepRun>
               </children>
-              <result assertCount="3" duration="2.1326621">
+              <result assertCount="3" duration="2.0532629">
                 <outcome status="passed" />
               </result>
               <testLog>
@@ -431,7 +431,7 @@
               </testLog>
             </testStepRun>
           </children>
-          <result assertCount="3" duration="2.1330578">
+          <result assertCount="3" duration="2.0535981999999997">
             <outcome status="passed" />
           </result>
           <testLog>
@@ -439,8 +439,8 @@
             <attachments />
           </testLog>
         </testStepRun>
-        <testStepRun startTime="2014-02-05T01:45:43.0326099+01:00" endTime="2014-02-05T01:45:44.1187465+01:00">
-          <testStep id="3c62dedd03e9c5bc" name="SkanetrafikenServiceAgent.Test" fullName="SkanetrafikenServiceAgent.Test" testId="a66f78723596df21" isPrimary="true" isTestCase="false" isDynamic="false">
+        <testStepRun startTime="2014-02-12T00:00:54.6087042+01:00" endTime="2014-02-12T00:00:55.6798396+01:00">
+          <testStep id="f3458d81514eda02" name="SkanetrafikenServiceAgent.Test" fullName="SkanetrafikenServiceAgent.Test" testId="a66f78723596df21" isPrimary="true" isTestCase="false" isDynamic="false">
             <codeReference assembly="SkanetrafikenServiceAgent.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
             <codeLocation path="C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\SkanetrafikenServiceAgent.Test.dll" />
             <metadata>
@@ -474,8 +474,8 @@
             </metadata>
           </testStep>
           <children>
-            <testStepRun startTime="2014-02-05T01:45:43.0336113+01:00" endTime="2014-02-05T01:45:44.1187465+01:00">
-              <testStep id="bf793185c1f88c95" name="SkanetrafikenServiceAgent" fullName="SkanetrafikenServiceAgent.Test/SkanetrafikenServiceAgent" testId="f845380ecc6b4eae" isPrimary="true" isTestCase="false" isDynamic="false">
+            <testStepRun startTime="2014-02-12T00:00:54.6087042+01:00" endTime="2014-02-12T00:00:55.6798396+01:00">
+              <testStep id="32a1b60bc7371ad4" name="SkanetrafikenServiceAgent" fullName="SkanetrafikenServiceAgent.Test/SkanetrafikenServiceAgent" testId="f845380ecc6b4eae" isPrimary="true" isTestCase="false" isDynamic="false">
                 <codeReference assembly="SkanetrafikenServiceAgent.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
                 <codeLocation path="C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\SkanetrafikenServiceAgent.Test.dll" />
                 <metadata>
@@ -485,8 +485,8 @@
                 </metadata>
               </testStep>
               <children>
-                <testStepRun startTime="2014-02-05T01:45:43.0336113+01:00" endTime="2014-02-05T01:45:44.1187465+01:00">
-                  <testStep id="4e3de695e9906502" name="Test" fullName="SkanetrafikenServiceAgent.Test/SkanetrafikenServiceAgent/Test" testId="815266b1b8bb77c5" isPrimary="true" isTestCase="false" isDynamic="false">
+                <testStepRun startTime="2014-02-12T00:00:54.6097051+01:00" endTime="2014-02-12T00:00:55.6798396+01:00">
+                  <testStep id="a0a20dca6baecc3f" name="Test" fullName="SkanetrafikenServiceAgent.Test/SkanetrafikenServiceAgent/Test" testId="815266b1b8bb77c5" isPrimary="true" isTestCase="false" isDynamic="false">
                     <codeReference assembly="SkanetrafikenServiceAgent.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
                     <codeLocation path="C:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\bin\Debug\SkanetrafikenServiceAgent.Test.dll" />
                     <metadata>
@@ -496,8 +496,8 @@
                     </metadata>
                   </testStep>
                   <children>
-                    <testStepRun startTime="2014-02-05T01:45:43.0336113+01:00" endTime="2014-02-05T01:45:44.1187465+01:00">
-                      <testStep id="7298ad1565c19bbe" name="SkanetrafikenServiceAgentTest" fullName="SkanetrafikenServiceAgent.Test/SkanetrafikenServiceAgent/Test/SkanetrafikenServiceAgentTest" testId="779f01b85097d267" isPrimary="true" isTestCase="false" isDynamic="false">
+                    <testStepRun startTime="2014-02-12T00:00:54.6097051+01:00" endTime="2014-02-12T00:00:55.6798396+01:00">
+                      <testStep id="6605698e62ff8f26" name="SkanetrafikenServiceAgentTest" fullName="SkanetrafikenServiceAgent.Test/SkanetrafikenServiceAgent/Test/SkanetrafikenServiceAgentTest" testId="779f01b85097d267" isPrimary="true" isTestCase="false" isDynamic="false">
                         <codeReference assembly="SkanetrafikenServiceAgent.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" namespace="SkanetrafikenServiceAgent.Test" type="SkanetrafikenServiceAgent.Test.SkanetrafikenServiceAgentTest" />
                         <codeLocation path="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\SkanetrafikenServiceAgentTest.cs" />
                         <metadata>
@@ -507,8 +507,8 @@
                         </metadata>
                       </testStep>
                       <children>
-                        <testStepRun startTime="2014-02-05T01:45:43.0346109+01:00" endTime="2014-02-05T01:45:44.1117461+01:00">
-                          <testStep id="57a6620f815829c" name="ParseProxyResult_GivenADeviationInProxyAnswer_DeviationIsParsed" fullName="SkanetrafikenServiceAgent.Test/SkanetrafikenServiceAgent/Test/SkanetrafikenServiceAgentTest/ParseProxyResult_GivenADeviationInProxyAnswer_DeviationIsParsed" testId="20ad7e6c214c8d26" isPrimary="true" isTestCase="true" isDynamic="false">
+                        <testStepRun startTime="2014-02-12T00:00:54.6107043+01:00" endTime="2014-02-12T00:00:55.6708383+01:00">
+                          <testStep id="e36cce1a1ddc0c10" name="ParseProxyResult_GivenADeviationInProxyAnswer_DeviationIsParsed" fullName="SkanetrafikenServiceAgent.Test/SkanetrafikenServiceAgent/Test/SkanetrafikenServiceAgentTest/ParseProxyResult_GivenADeviationInProxyAnswer_DeviationIsParsed" testId="20ad7e6c214c8d26" isPrimary="true" isTestCase="true" isDynamic="false">
                             <codeReference assembly="SkanetrafikenServiceAgent.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" namespace="SkanetrafikenServiceAgent.Test" type="SkanetrafikenServiceAgent.Test.SkanetrafikenServiceAgentTest" member="ParseProxyResult_GivenADeviationInProxyAnswer_DeviationIsParsed" />
                             <codeLocation path="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\SkanetrafikenServiceAgentTest.cs" line="87" />
                             <metadata>
@@ -518,7 +518,7 @@
                             </metadata>
                           </testStep>
                           <children />
-                          <result assertCount="1" duration="1.0772249999999999">
+                          <result assertCount="1" duration="1.0608928">
                             <outcome status="passed" />
                           </result>
                           <testLog>
@@ -526,8 +526,8 @@
                             <attachments />
                           </testLog>
                         </testStepRun>
-                        <testStepRun startTime="2014-02-05T01:45:44.1117461+01:00" endTime="2014-02-05T01:45:44.1137514+01:00">
-                          <testStep id="5eb9c21bbc40ad22" name="ParseProxyResult_GivenAJourneyTimeWithoutDeviationInProxyAnswer_JourneyTimeIsParsed" fullName="SkanetrafikenServiceAgent.Test/SkanetrafikenServiceAgent/Test/SkanetrafikenServiceAgentTest/ParseProxyResult_GivenAJourneyTimeWithoutDeviationInProxyAnswer_JourneyTimeIsParsed" testId="9cff678df2cf4cb" isPrimary="true" isTestCase="true" isDynamic="false">
+                        <testStepRun startTime="2014-02-12T00:00:55.6708383+01:00" endTime="2014-02-12T00:00:55.6738436+01:00">
+                          <testStep id="19afbc7936a43963" name="ParseProxyResult_GivenAJourneyTimeWithoutDeviationInProxyAnswer_JourneyTimeIsParsed" fullName="SkanetrafikenServiceAgent.Test/SkanetrafikenServiceAgent/Test/SkanetrafikenServiceAgentTest/ParseProxyResult_GivenAJourneyTimeWithoutDeviationInProxyAnswer_JourneyTimeIsParsed" testId="9cff678df2cf4cb" isPrimary="true" isTestCase="true" isDynamic="false">
                             <codeReference assembly="SkanetrafikenServiceAgent.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" namespace="SkanetrafikenServiceAgent.Test" type="SkanetrafikenServiceAgent.Test.SkanetrafikenServiceAgentTest" member="ParseProxyResult_GivenAJourneyTimeWithoutDeviationInProxyAnswer_JourneyTimeIsParsed" />
                             <codeLocation path="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\SkanetrafikenServiceAgentTest.cs" line="66" />
                             <metadata>
@@ -537,7 +537,7 @@
                             </metadata>
                           </testStep>
                           <children />
-                          <result assertCount="1" duration="0.0023251">
+                          <result assertCount="1" duration="0.0028016">
                             <outcome status="passed" />
                           </result>
                           <testLog>
@@ -545,8 +545,8 @@
                             <attachments />
                           </testLog>
                         </testStepRun>
-                        <testStepRun startTime="2014-02-05T01:45:44.1137514+01:00" endTime="2014-02-05T01:45:44.1187465+01:00">
-                          <testStep id="480ba7ff0a4d2c7b" name="ParseProxyResult_GivenAServiceIdInProxyAnswer_ServiceIdIsParsed" fullName="SkanetrafikenServiceAgent.Test/SkanetrafikenServiceAgent/Test/SkanetrafikenServiceAgentTest/ParseProxyResult_GivenAServiceIdInProxyAnswer_ServiceIdIsParsed" testId="d6c9dc3ae8c534f4" isPrimary="true" isTestCase="true" isDynamic="false">
+                        <testStepRun startTime="2014-02-12T00:00:55.6738436+01:00" endTime="2014-02-12T00:00:55.6798396+01:00">
+                          <testStep id="1468c0f0489b5b46" name="ParseProxyResult_GivenAServiceIdInProxyAnswer_ServiceIdIsParsed" fullName="SkanetrafikenServiceAgent.Test/SkanetrafikenServiceAgent/Test/SkanetrafikenServiceAgentTest/ParseProxyResult_GivenAServiceIdInProxyAnswer_ServiceIdIsParsed" testId="d6c9dc3ae8c534f4" isPrimary="true" isTestCase="true" isDynamic="false">
                             <codeReference assembly="SkanetrafikenServiceAgent.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" namespace="SkanetrafikenServiceAgent.Test" type="SkanetrafikenServiceAgent.Test.SkanetrafikenServiceAgentTest" member="ParseProxyResult_GivenAServiceIdInProxyAnswer_ServiceIdIsParsed" />
                             <codeLocation path="c:\Git\Bus Tracker\BusTrackerWeb\SkanetrafikenServiceAgent.Test\SkanetrafikenServiceAgentTest.cs" line="45" />
                             <metadata>
@@ -556,7 +556,7 @@
                             </metadata>
                           </testStep>
                           <children />
-                          <result assertCount="1" duration="0.0048170999999999995">
+                          <result assertCount="1" duration="0.0060913">
                             <outcome status="passed" />
                           </result>
                           <testLog>
@@ -565,7 +565,7 @@
                           </testLog>
                         </testStepRun>
                       </children>
-                      <result assertCount="3" duration="1.0851184999999999">
+                      <result assertCount="3" duration="1.0705327">
                         <outcome status="passed" />
                       </result>
                       <testLog>
@@ -574,7 +574,7 @@
                       </testLog>
                     </testStepRun>
                   </children>
-                  <result assertCount="3" duration="1.0853713">
+                  <result assertCount="3" duration="1.0707815999999999">
                     <outcome status="passed" />
                   </result>
                   <testLog>
@@ -583,7 +583,7 @@
                   </testLog>
                 </testStepRun>
               </children>
-              <result assertCount="3" duration="1.0855612">
+              <result assertCount="3" duration="1.0709981">
                 <outcome status="passed" />
               </result>
               <testLog>
@@ -592,7 +592,7 @@
               </testLog>
             </testStepRun>
           </children>
-          <result assertCount="3" duration="1.0861536">
+          <result assertCount="3" duration="1.0714758">
             <outcome status="passed" />
           </result>
           <testLog>
@@ -601,7 +601,7 @@
           </testLog>
         </testStepRun>
       </children>
-      <result assertCount="6" duration="5.0350597">
+      <result assertCount="6" duration="5.3592781999999994">
         <outcome status="passed" />
       </result>
       <testLog>
@@ -609,7 +609,7 @@
         <attachments />
       </testLog>
     </testStepRun>
-    <statistics assertCount="6" duration="5.0527723" runCount="6" passedCount="6" failedCount="0" inconclusiveCount="0" skippedCount="0" testCount="6" stepCount="16">
+    <statistics assertCount="6" duration="5.3868396999999995" runCount="6" passedCount="6" failedCount="0" inconclusiveCount="0" skippedCount="0" testCount="6" stepCount="16">
       <outcomeSummaries>
         <outcomeSummary count="6">
           <outcome status="passed" />
